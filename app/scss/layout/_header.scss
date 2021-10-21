@@ -1,4 +1,5 @@
 .header {
+    padding: 20px 0;
     &__options {
         @include flex(row, center, flex-end);
         &-link {
@@ -31,6 +32,14 @@
             left: 0;
             width: 100%;
             z-index: 10;
+        }
+    }
+    &:not(.header_is-sticky) {
+        border-bottom: 1px solid $secondary-900;
+        & .lang {
+            &__link {
+                background: $secondary-950;
+            }
         }
     }
 }

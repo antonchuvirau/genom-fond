@@ -14,6 +14,11 @@
             font-weight: 500;
             font-size: 1.8rem;
             color: $dark;
+            &_active {
+                pointer-events: none;
+                color: $primary;
+                text-decoration: underline;
+            }
             &:hover {
                 opacity: .85;
             }

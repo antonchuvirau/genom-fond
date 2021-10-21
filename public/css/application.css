@@ -4156,46 +4156,49 @@ table {
   padding: 0;
   margin: 0; }
 
-.header__options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap; }
-  .header__options-link {
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-right: 40px;
-    color: #612B69; }
-    .header__options-link_is-colored {
-      color: #F28314; }
-    .header__options-link:hover {
-      opacity: .85; }
-
-.header__logo {
-  display: block; }
-
-.header__navigation {
-  margin-top: 25px; }
-
-.header_is-sticky {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10; }
+.header {
+  padding: 20px 0; }
+  .header__options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+    .header__options-link {
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-right: 40px;
+      color: #612B69; }
+      .header__options-link_is-colored {
+        color: #F28314; }
+      .header__options-link:hover {
+        opacity: .85; }
+  .header__logo {
+    display: block; }
+  .header__navigation {
+    margin-top: 25px; }
+  .header_is-sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; }
+  .header:not(.header_is-sticky) {
+    border-bottom: 1px solid #EDE2D8; }
+    .header:not(.header_is-sticky) .lang__link {
+      background: #F2ECE7; }
 
 .footer {
   background: #EDF0FD; }
@@ -4518,6 +4521,42 @@ table {
 .text-section__content {
   padding-right: 70px; }
 
+.template__wrapper {
+  padding: 40px 0;
+  padding-bottom: 70px; }
+
+.template__breadcrumbs {
+  margin-bottom: 10px; }
+
+.template__title {
+  margin: 0;
+  font-size: 3.7rem;
+  color: #612B69;
+  margin-bottom: 35px; }
+
+.health-template__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .health-template__grid-item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 60px; }
+    .health-template__grid-item:nth-child(2n) {
+      margin-right: 0; }
+
 .logo__media {
   max-width: 307px;
   max-height: 120px; }
@@ -4566,6 +4605,10 @@ table {
     font-weight: 500;
     font-size: 1.8rem;
     color: #4E3434; }
+    .navigation__list-link_active {
+      pointer-events: none;
+      color: #612B69;
+      text-decoration: underline; }
     .navigation__list-link:hover {
       opacity: .85; }
 
@@ -4887,3 +4930,105 @@ table {
 
 .media-swiper__img {
   border-radius: 10px; }
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  font-size: 1.4rem;
+  color: #867878; }
+  .breadcrumbs a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #612B69;
+    padding: 0 5px; }
+    .breadcrumbs a:first-child {
+      padding-left: 0; }
+    .breadcrumbs a:hover {
+      opacity: .85; }
+  .breadcrumbs span {
+    padding: 0 5px; }
+    .breadcrumbs span:last-child {
+      padding-right: 0; }
+
+.health-item {
+  text-decoration: none; }
+  .health-item__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    padding: 45px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px; }
+  .health-item__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #612B69;
+    margin-bottom: 15px;
+    line-height: 1.35; }
+  .health-item__content {
+    margin-bottom: 35px; }
+    .health-item__content p {
+      margin: 0;
+      font-size: 1.8rem;
+      line-height: 1.55;
+      color: #4E3434; }
+  .health-item__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    margin-top: auto;
+    font-weight: 500;
+    color: #612B69;
+    font-size: 2rem;
+    margin-top: auto; }
+    .health-item__link svg {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      margin-left: 15px; }
+  .health-item:hover .health-item__wrapper {
+    background: #612B69; }
+  .health-item:hover .health-item__title {
+    color: #fff; }
+  .health-item:hover .health-item__content p {
+    color: #fff; }
+  .health-item:hover .health-item__link {
+    color: #fff; }

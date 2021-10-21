@@ -1,0 +1,59 @@
+// VARIABLES
+$health-item-br: 10px;
+
+.health-item {
+    text-decoration: none;
+    &__wrapper {
+        @include flex(column, stretch);
+        padding: 45px 30px;
+        background: $white;
+        box-shadow: 0 2px 15px 0 rgba($full-black, .1);
+        border-radius: $health-item-br;
+    }
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: $primary;
+        margin-bottom: 15px;
+        line-height: 1.35;
+    }
+    &__content {
+        margin-bottom: 35px;
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.55;
+            color: $dark;
+        }
+    }
+    &__link {
+        @include flex(row, center);
+        margin-top: auto;
+        font-weight: 500;
+        color: $primary;
+        font-size: 2rem;
+        margin-top: auto;
+        & svg {
+            flex-shrink: 0;
+            margin-left: 15px;
+        }
+    }
+    &:hover {
+        & .health-item {
+            &__wrapper {
+                background: $primary;
+            }
+            &__title {
+                color: $white;
+            }
+            &__content {
+                & p {
+                    color: $white;
+                }
+            }
+            &__link {
+                color: $white;
+            }
+        }
+    }
+}

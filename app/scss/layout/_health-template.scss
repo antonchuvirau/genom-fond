@@ -1,0 +1,13 @@
+.health-template {
+    &__grid {
+        @include flex(row, stretch, flex-start, wrap);
+        &-item {
+            width: calc((100% - 30px) / 2);
+            margin-right: 30px;
+            margin-bottom: 60px;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+}

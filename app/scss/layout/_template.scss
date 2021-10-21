@@ -1,0 +1,15 @@
+.template {
+    &__wrapper {
+        padding: 40px 0;
+        padding-bottom: 70px;
+    }
+    &__breadcrumbs {
+        margin-bottom: 10px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 3.7rem;
+        color: $primary;
+        margin-bottom: 35px;
+    }
+}
