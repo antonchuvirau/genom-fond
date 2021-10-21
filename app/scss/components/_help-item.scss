@@ -1,0 +1,30 @@
+.help-item {
+    text-decoration: none;
+    &__wrapper {
+        @include flex(column, stretch);
+        padding: 35px 30px;
+        height: 100%;
+    }
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: $primary;
+    }
+    &__location {
+        font-weight: 500;
+        color: $primary;
+        margin-top: 10px;
+    }
+    &__content {
+        margin-top: 15px;
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.45;
+            color: $dark;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

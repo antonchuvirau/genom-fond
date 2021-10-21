@@ -1,0 +1,20 @@
+// VARIABLES
+$lang-br: 6px;
+
+.lang {
+    &__wrapper {
+        @include flex();
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        color: $primary;
+        padding: .8em .6em;
+        background: $white;
+        padding-bottom: .7em;
+        border-radius: $lang-br;
+        &:hover {
+            opacity: .85;
+        }
+    }
+}

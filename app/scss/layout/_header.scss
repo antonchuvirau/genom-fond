@@ -1,0 +1,36 @@
+.header {
+    &__options {
+        @include flex(row, center, flex-end);
+        &-link {
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-right: 40px;
+            color: $primary;
+            &_is {
+                &-colored {
+                    color: $secondary;
+                }
+            }
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+    &__logo {
+        display: block;
+    }
+    &__navigation {
+        margin-top: 25px;
+    }
+    &_is {
+        &-sticky {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+    }
+}

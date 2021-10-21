@@ -1,0 +1,19 @@
+// VARIABLES
+$carousel-navigation-br: 6px;
+
+.carousel-navigation {
+    @include flex(row, center);
+    &__btn {
+        @include flex(row, center, center);
+        width: 35px;
+        height: 35px;
+        border-radius: $carousel-navigation-br;
+        background: $secondary-900;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &:hover {
+            background: $primary-850;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// VARIABLES
+$media-swiper-img-br: 10px;
+
+.media-swiper {
+    &__wrapper {
+        padding-right: 45px;
+    }
+    &__footer {
+        @include flex(row, center);
+        margin-top: 35px;
+    }
+    &__link {
+        @include flex(row, center);
+        text-decoration: none;
+        font-size: 2rem;
+        color: $primary;
+        font-weight: 500;
+        & svg {
+            flex-shrink: 0;
+            margin-left: 15px;
+        }
+        &:hover {
+            opacity: .85;
+        }
+    }
+    &__navigation {
+        margin-left: auto;
+    }
+    &__img {
+        border-radius: $media-swiper-img-br;
+    }
+}

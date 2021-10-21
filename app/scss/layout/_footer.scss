@@ -1,0 +1,134 @@
+.footer {
+    background: $primary-900;
+    &__wrapper {
+        padding: 60px 0;
+        padding-bottom: 50px;
+    }
+    &__copyright {
+        margin: 0;
+        margin-top: 40px;
+        font-size: 1.4rem;
+        color: $dark-700;
+    }
+    &__btn {
+        width: 100%;
+        max-width: 270px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    &__info {
+        margin-bottom: 40px;
+        &-text {
+            @include flex(column);
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+            & p {
+                width: 100%;
+                margin: 0;
+                color: $dark;
+                line-height: 1.55;
+            }
+            & a {
+                text-decoration: none;
+                line-height: 1.55;
+                &[href*="tel"] {
+                    color: $dark;
+                    font-weight: 600;
+                    white-space: nowrap;
+                }
+                &[href*="mailto"] {
+                    white-space: nowrap;
+                    color: $primary;
+                }
+                &:hover {
+                    opacity: .85;
+                }
+            }
+            &:last-child {
+                & p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    &__navigation {
+        @include flex();
+        &-col {
+            @include flex(column);
+            &:not(:last-child) {
+                margin-right: 75px;
+            }
+        }
+        &-link {
+            text-decoration: none;
+            color: $primary;
+            font-weight: 500;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            &_size {
+                &-l {
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                }
+            }
+            &_is {
+                &-colored {
+                    color: $secondary;
+                }
+            }
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+    &__links {
+        & a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: $primary;
+            display: inline-block;
+            vertical-align: middle;
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+    &__search {
+        margin-bottom: 30px;
+        &-form {
+            position: relative;
+            border-bottom: 1px solid rgba($primary, .4);
+        }
+        &-input {
+            width: 100%;
+            padding: 1em 0;
+            padding-right: 35px;
+        }
+        &-btn {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            background: icon('search.svg') no-repeat 50% / 24px auto;
+            z-index: 1;
+        }
+    }
+    &__col {
+        &:last-child {
+            @include flex(column, stretch, flex-end);
+        }
+    }
+}

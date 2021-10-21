@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face {
+    font-family: 'GothamPro';
+    src: font('GothamPro.woff2') format('woff2'), font('GothamPro.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GothamPro';
+    src: font('GothamPro-Medium.woff2') format('woff2'), font('GothamPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GothamPro';
+    src: font('GothamPro-Bold.woff2') format('woff2'), font('GothamPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GothamPro';
+    src: font('GothamPro-Black.woff2') format('woff2'), font('GothamPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,26 @@
+// VARIABLES
+$swiper-slide-br: 10px;
+
+.help-section {
+    &__header {
+        margin-bottom: 20px;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__swiper {
+        padding: 15px 0;
+        & .swiper-wrapper {
+            align-items: stretch;
+        }
+    }
+    &__swiper {
+        &-slide {
+            height: auto;
+            max-width: 445px;
+            padding: 0 7.5px;
+            box-shadow: 0 2px 15px 0 rgba($full-black, .1);
+            border-radius: $swiper-slide-br;
+        }
+    }
+}

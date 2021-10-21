@@ -1,0 +1,27 @@
+// VARIABLES
+$btn-br: 10px;
+
+.btn {
+    display: inline-block;
+    padding: 1.55em 2.2em;
+    text-decoration: none;
+    font-weight: 500;
+    color: $white;
+    background: $primary;
+    border-radius: $btn-br;
+    text-align: center;
+    &_is {
+        &-colored {
+            background: $secondary;
+        }
+    }
+    &_size {
+        &-m {
+            font-size: 2rem;
+            padding: 1em 2em;
+        }
+    }
+    &:hover {
+        opacity: .85;
+    }
+}

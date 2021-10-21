@@ -1,0 +1,40 @@
+// VARIABLES
+$about-section-form-br: 10px;
+
+.about-section {
+    &__title {
+        padding-left: 70px;
+    }
+    &__links {
+        @include flex(row, center);
+        margin-top: 25px;
+        & a {
+            @include flex(row, center);
+            font-size: 2rem;
+            font-weight: 500;
+            color: $primary;
+            text-decoration: none;
+            &:not(:last-child) {
+                margin-right: 70px;
+            }
+            & svg {
+                margin-left: 15px;
+                flex-shrink: 0;
+            }
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+    &__number {
+        margin-top: 15px;
+    }
+    &__form {
+        padding-left: 70px;
+        &-instance {
+            padding: 40px;
+            background: $primary-900;
+            border-radius: $about-section-form-br;
+        }
+    }
+}

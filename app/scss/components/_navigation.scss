@@ -1,0 +1,22 @@
+.navigation {
+    &__list {
+        @include flex(row, center);
+        &_end {
+            justify-content: flex-end;
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+        &-link {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.8rem;
+            color: $dark;
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+}

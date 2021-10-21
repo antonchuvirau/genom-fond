@@ -1,0 +1,44 @@
+.section {
+    &__col {
+        position: relative;
+    }
+    &__wrapper {
+        padding: 55px 0;
+        border-bottom: 1px solid $primary-900;
+        &_no {
+            &-border {
+                border-bottom: none;
+            }
+        }
+    }
+    &__title {
+        margin: 0;
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $primary;
+        margin-bottom: 30px;
+    }
+    &__content {
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.65;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__navigation {
+        position: absolute;
+        right: 7.5px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    &__note {
+        font-size: 1.4rem;
+        color: $dark-600;
+        line-height: 1.85;
+        margin-top: 50px;
+    }
+}
