@@ -10,6 +10,37 @@
         margin: 0;
         font-size: 3.7rem;
         color: $primary;
-        margin-bottom: 35px;
+    }
+    &__grid {
+        margin-top: 35px;
+        &-link {
+            @include flex(row, center);
+            font-size: 2rem;
+            font-weight: 500;
+            color: $primary;
+            text-decoration: none;
+            margin-top: 45px;
+            & svg {
+                flex-shrink: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+    &__note {
+        display: block;
+        font-weight: 500;
+        color: $primary;
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+    &__content {
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.55;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
     }
 }

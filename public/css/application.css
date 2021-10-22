@@ -4638,8 +4638,49 @@ table {
 .template__title {
   margin: 0;
   font-size: 3.7rem;
+  color: #612B69; }
+
+.template__grid {
+  margin-top: 35px; }
+  .template__grid-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #612B69;
+    text-decoration: none;
+    margin-top: 45px; }
+    .template__grid-link svg {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      margin-right: 15px; }
+
+.template__note {
+  display: block;
+  font-weight: 500;
   color: #612B69;
-  margin-bottom: 35px; }
+  font-size: 2rem;
+  margin-top: 15px; }
+
+.template__content p {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.55; }
+  .template__content p:not(:last-child) {
+    margin-bottom: 30px; }
 
 .health-template__grid {
   display: -webkit-box;
@@ -4663,6 +4704,9 @@ table {
     margin-bottom: 60px; }
     .health-template__grid-item:nth-child(2n) {
       margin-right: 0; }
+
+.help-template__form {
+  margin-top: 60px; }
 
 .logo__media {
   max-width: 307px;
