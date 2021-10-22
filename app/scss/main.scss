@@ -109,7 +109,8 @@ $utilities: map-get-multiple(
   'layout/text-section',
   'layout/template',
   'layout/health-template',
-  'layout/help-template';
+  'layout/help-template',
+  'layout/contact-template';
 
 // 5. Components
 @import
@@ -126,7 +127,9 @@ $utilities: map-get-multiple(
   'components/breadcrumbs',
   'components/health-item',
   'components/help-form',
-  'components/modal';
+  'components/modal',
+  'components/contact-info',
+  'components/company-info';
 
 // 6. Page-specific styles
 @import

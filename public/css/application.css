@@ -4682,6 +4682,9 @@ table {
   .template__content p:not(:last-child) {
     margin-bottom: 30px; }
 
+.template__help-form {
+  margin-top: 60px; }
+
 .health-template__grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4705,8 +4708,17 @@ table {
     .health-template__grid-item:nth-child(2n) {
       margin-right: 0; }
 
+.health-template__form {
+  margin-top: 0; }
+
 .help-template__form {
-  margin-top: 60px; }
+  margin-top: 0; }
+
+.contact-template__map {
+  border-radius: 10px; }
+
+.contact-template__wrapper {
+  padding-bottom: 70px; }
 
 .logo__media {
   max-width: 307px;
@@ -5279,3 +5291,44 @@ table {
 
 .health-modal {
   max-width: 770px; }
+
+.contact-info__title {
+  margin: 0;
+  font-size: 2.4rem;
+  color: #612B69;
+  margin-bottom: 30px; }
+
+.contact-info__value {
+  font-size: 1.8rem;
+  color: #4E3434;
+  line-height: 1.45; }
+  .contact-info__value p, .contact-info__value a {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #4E3434;
+    line-height: 1.45;
+    max-width: 310px; }
+  .contact-info__value a {
+    text-decoration: none; }
+    .contact-info__value a:hover {
+      opacity: .85; }
+  .contact-info__value:not(:last-child) {
+    margin-bottom: 35px; }
+
+.company-info {
+  background: #FDFAF8; }
+  .company-info__wrapper {
+    padding: 65px 0;
+    padding-bottom: 50px; }
+  .company-info__title {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #612B69;
+    margin-bottom: 30px; }
+  .company-info__col p {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.55; }
+    .company-info__col p:not(:last-child) {
+      margin-bottom: 30px; }

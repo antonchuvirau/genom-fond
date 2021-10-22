@@ -1,0 +1,14 @@
+// VARIABLES
+$contact-template-map-br: 10px;
+
+.contact-template {
+    &__map {
+        border-radius: $contact-template-map-br;
+        & ymaps {
+            // border-radius: $contact-template-map-br;
+        }
+    }
+    &__wrapper {
+        padding-bottom: 70px;
+    }
+}
