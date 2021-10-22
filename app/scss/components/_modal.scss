@@ -1,0 +1,41 @@
+.modal {
+    box-shadow: 0 3px 20px 0 rgba($full-black, .1);
+    & a.close-modal {
+        top: 25px;
+        right: 25px;
+        width: 25px;
+        height: 25px;
+        transition: transform .25s ease;
+        background: icon('close.svg') no-repeat 50% / 25px auto;
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+    &__wrapper {
+        padding: 35px 30px;
+    }
+    &__title {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: $primary;
+        line-height: 1.35;
+        text-align: left;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    &__content {
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.55;
+            color: $dark;
+        }
+    }
+}
+.blocker {
+    background: rgba($full-black, .15);
+}
+.health-modal {
+    max-width: 770px;
+}

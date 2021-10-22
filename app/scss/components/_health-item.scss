@@ -14,10 +14,17 @@ $health-item-br: 10px;
         font-size: 2.4rem;
         font-weight: 600;
         color: $primary;
-        margin-bottom: 15px;
         line-height: 1.35;
+        max-width: 350px;
+    }
+    &__location {
+        display: block;
+        color: $primary;
+        font-weight: 500;
+        margin-top: 5px;
     }
     &__content {
+        margin-top: 20px;
         margin-bottom: 35px;
         & p {
             margin: 0;
@@ -44,6 +51,9 @@ $health-item-br: 10px;
                 background: $primary;
             }
             &__title {
+                color: $white;
+            }
+            &__location {
                 color: $white;
             }
             &__content {

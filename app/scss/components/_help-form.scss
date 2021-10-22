@@ -1,0 +1,44 @@
+// VARIABLES
+$help-form-br: 10px;
+
+.help-form {
+    background: $primary-900;
+    border-radius: $help-form-br;
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        text-align: left;
+        color: $primary;
+        align-self: center;
+        margin-right: 25px;
+    }
+    &__wrapper {
+        padding: 50px 45px;
+    }
+    &__instance {
+        @include flex(row, stretch);
+    }
+    &__btn {
+        width: 100%;
+        max-width: 270px;
+    }
+    &__row {
+        flex: 1 0 auto;
+        &:nth-child(n) {
+            margin: 0;
+            margin-right: 20px;
+        }
+    }
+    &__radio {
+        height: 100%;
+        &:nth-child(n) {
+            margin: 0;
+            margin-right: 20px;
+        }
+    }
+    &__value {
+        &-input {
+            height: 100%;
+        }
+    }
+}

@@ -87,7 +87,8 @@ $utilities: map-get-multiple(
 // 2. Vendors
 @import
   'vendors/normalize',
-  'vendors/swiperjs';
+  'vendors/swiperjs',
+  'vendors/jquerymodal';
 
 // 3. Base stuff
 @import
@@ -122,7 +123,9 @@ $utilities: map-get-multiple(
   'components/help-item',
   'components/media-swiper',
   'components/breadcrumbs',
-  'components/health-item';
+  'components/health-item',
+  'components/help-form',
+  'components/modal';
 
 // 6. Page-specific styles
 @import
