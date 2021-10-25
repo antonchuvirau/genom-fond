@@ -62,7 +62,7 @@
         &-col {
             @include flex(column);
             &:not(:last-child) {
-                margin-right: 75px;
+                margin-right: 65px;
             }
         }
         &-link {

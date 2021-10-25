@@ -1,0 +1,40 @@
+// PAGINATION
+$pagination-link-br: 6px;
+
+.pagination {
+    @include flex(row, center);
+    &__arrows {
+        @include flex(row, center);
+        margin-left: 45px;
+    }
+    &__numbers {
+        @include flex(row, center);
+    }
+    &__link {
+        display: block;
+        width: 35px;
+        height: 35px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 37px;
+        background: $secondary-930;
+        border-radius: $pagination-link-br;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $dark;
+        &:hover {
+            background: $secondary-900;
+        }
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &__arrow {
+        display: block;
+        width: 34px;
+        height: 18px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+// VARIABLES
+$news-item-br: 10px;
+
+.news-item {
+    display: block;
+    box-shadow: 0 2px 15px 0 rgba($full-black, .1);
+    border-radius: $news-item-br;
+    text-decoration: none;
+    &__wrapper {
+        padding: 35px;
+    }
+    &__date {
+        display: block;
+        font-size: 1.8rem;
+        color: $dark-600;
+        margin-bottom: 10px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $primary;
+        text-decoration: underline;
+    }
+    &__content {
+        margin-top: 25px;
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.45;
+            color: $dark-700;
+        }
+    }
+}

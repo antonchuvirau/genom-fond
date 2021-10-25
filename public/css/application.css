@@ -22,8 +22,8 @@ html {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 1.5rem);
+  padding-left: var(--bs-gutter-x, 1.5rem);
   margin-right: auto;
   margin-left: auto; }
 
@@ -44,7 +44,7 @@ html {
     max-width: 1170px; } }
 
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 3rem;
   --bs-gutter-y: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4286,12 +4286,20 @@ table {
       font-size: 1.8rem;
       font-weight: 900;
       text-transform: uppercase;
-      margin-right: 40px;
-      color: #612B69; }
+      margin-right: 5px;
+      color: #612B69;
+      padding: .65em 1em;
+      border-radius: 6px; }
+      .header__options-link:hover {
+        background: #612B69;
+        color: #fff; }
       .header__options-link_is-colored {
         color: #F28314; }
-      .header__options-link:hover {
-        opacity: .85; }
+        .header__options-link_is-colored:hover {
+          background: #F28314;
+          color: #fff; }
+  .header__lang {
+    margin-left: 15px; }
   .header__logo {
     display: block; }
   .header__navigation {
@@ -4398,7 +4406,7 @@ table {
       -ms-flex-wrap: no-wrap;
           flex-wrap: no-wrap; }
       .footer__navigation-col:not(:last-child) {
-        margin-right: 75px; }
+        margin-right: 65px; }
     .footer__navigation-link {
       text-decoration: none;
       color: #612B69;
@@ -4852,6 +4860,12 @@ table {
 
 .docs-section__title {
   margin-bottom: 75px; }
+
+.news-template__list-col {
+  margin-bottom: 50px; }
+
+.news-template__list-item {
+  height: 100%; }
 
 .logo__media {
   max-width: 307px;
@@ -5465,3 +5479,102 @@ table {
     line-height: 1.55; }
     .company-info__col p:not(:last-child) {
       margin-bottom: 30px; }
+
+.news-item {
+  display: block;
+  -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-decoration: none; }
+  .news-item__wrapper {
+    padding: 35px; }
+  .news-item__date {
+    display: block;
+    font-size: 1.8rem;
+    color: #867878;
+    margin-bottom: 10px; }
+  .news-item__title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #612B69;
+    text-decoration: underline; }
+  .news-item__content {
+    margin-top: 25px; }
+    .news-item__content p {
+      margin: 0;
+      font-size: 1.8rem;
+      line-height: 1.45;
+      color: #6E6161; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .pagination__arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    margin-left: 45px; }
+  .pagination__numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+  .pagination__link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 37px;
+    background: #FDFAF8;
+    border-radius: 6px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #4E3434; }
+    .pagination__link:hover {
+      background: #EDE2D8; }
+    .pagination__link:not(:last-child) {
+      margin-right: 20px; }
+  .pagination__arrow {
+    display: block;
+    width: 34px;
+    height: 18px; }
+    .pagination__arrow:not(:last-child) {
+      margin-right: 30px; }

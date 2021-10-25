@@ -112,7 +112,8 @@ $utilities: map-get-multiple(
   'layout/help-template',
   'layout/contact-template',
   'layout/about-template',
-  'layout/docs-section';
+  'layout/docs-section',
+  'layout/news-template';
 
 // 5. Components
 @import
@@ -131,7 +132,9 @@ $utilities: map-get-multiple(
   'components/help-form',
   'components/modal',
   'components/contact-info',
-  'components/company-info';
+  'components/company-info',
+  'components/news-item',
+  'components/pagination';
 
 // 6. Page-specific styles
 @import

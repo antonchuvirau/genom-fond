@@ -1,0 +1,10 @@
+.news-template {
+    &__list {
+        &-col {
+            margin-bottom: 50px;
+        }
+        &-item {
+            height: 100%;
+        }
+    }
+}

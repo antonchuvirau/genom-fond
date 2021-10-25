@@ -1,3 +1,6 @@
+// VARIABLES
+$header-options-link-br: 6px;
+
 .header {
     padding: 20px 0;
     &__options {
@@ -7,17 +10,27 @@
             font-size: 1.8rem;
             font-weight: 900;
             text-transform: uppercase;
-            margin-right: 40px;
+            margin-right: 5px;
             color: $primary;
+            padding: .65em 1em;
+            border-radius: $header-options-link-br;
+            &:hover {
+                background: $primary;
+                color: $white;
+            }
             &_is {
                 &-colored {
                     color: $secondary;
+                    &:hover {
+                        background: $secondary;
+                        color: $white;
+                    }
                 }
             }
-            &:hover {
-                opacity: .85;
-            }
         }
+    }
+    &__lang {
+        margin-left: 15px;
     }
     &__logo {
         display: block;
