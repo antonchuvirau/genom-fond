@@ -1,0 +1,32 @@
+.docs-section {
+    &__wrapper {
+        padding-top: 45px;
+    }
+    &__item {
+        position: relative;
+        text-decoration: none;
+        font-size: 2rem;
+        color: $primary;
+        font-weight: 500;
+        padding-left: 100px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70px;
+            height: 86px;
+            background: icon('doc.svg') no-repeat 50% / 70px auto;
+        }
+        &:not(:last-child) {
+            margin-bottom: 100px;
+        }
+    }
+    &__col {
+        @include flex(column);
+    }
+    &__title {
+        margin-bottom: 75px;
+    }
+}
