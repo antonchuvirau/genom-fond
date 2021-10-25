@@ -1,0 +1,51 @@
+.make-help-template {
+    &__col {
+        &-title {
+            display: block;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            color: $dark-600;
+        }
+        &:first-child {
+            padding-right: 30px;
+        }
+    }
+    &__icons {
+        @include flex(row, center);
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        & img {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+    &__links {
+        @include flex(column);
+        margin-bottom: 45px;
+        & a {
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 500;
+            color: $primary;
+            &:hover {
+                opacity: .85;
+            }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__details {
+        margin-top: 70px;
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.45;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

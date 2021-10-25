@@ -115,7 +115,8 @@ $utilities: map-get-multiple(
   'layout/docs-section',
   'layout/news-template',
   'layout/get-help-template',
-  'layout/mission-section';
+  'layout/mission-section',
+  'layout/make-help-template';
 
 // 5. Components
 @import
@@ -136,7 +137,9 @@ $utilities: map-get-multiple(
   'components/contact-info',
   'components/company-info',
   'components/news-item',
-  'components/pagination';
+  'components/pagination',
+  'components/checkbox',
+  'components/make-help-form';
 
 // 6. Page-specific styles
 @import

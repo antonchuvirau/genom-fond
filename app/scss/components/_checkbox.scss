@@ -1,0 +1,52 @@
+// VARIABLES
+$checkbox-br: 8px;
+
+.checkbox {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    &__input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    &__name {
+        position: relative;
+        display: block;
+        color: $dark;
+        padding-left: 50px;
+        &-note {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.6rem;
+            color: $dark-600;
+        }
+        & a {
+            text-decoration: underline;
+            color: $primary;
+            font-size: 1.6rem;
+            &:hover {
+                opacity: .85;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            border: 1px solid $primary-800;
+            border-radius: $checkbox-br;
+            background: $white;
+        }
+        &_size {
+            &-m {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

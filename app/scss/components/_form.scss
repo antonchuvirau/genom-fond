@@ -11,6 +11,11 @@ $form-input-br: 8px;
         text-align: center;
         font-size: 1.4rem;
         color: $dark-700;
+        &_align {
+            &-left {
+                text-align: left;
+            }
+        }
         & a {
             text-decoration: none;
             color: $primary;
@@ -89,5 +94,18 @@ $form-input-br: 8px;
                 color: transparent;
             }
         }
+    }
+    &__sub {
+        &-title {
+            display: block;
+            margin: 0;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: $primary;
+            margin-bottom: 20px;
+        }
+    }
+    &__unsubscribe {
+        margin-top: 30px;
     }
 }
