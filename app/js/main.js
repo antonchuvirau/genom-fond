@@ -32,10 +32,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
     if (mediaSwiperInstanceCollection.length) {
         for (const mediaSwiperInstance of mediaSwiperInstanceCollection) {
             new Swiper(mediaSwiperInstance, {
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
-                },
+                effect: "cards",
+                grabCursor: true,
                 speed: 800,
                 navigation: {
                     prevEl: mediaSwiperInstance.closest(`.text-section`).querySelector(`.carousel-navigation__btn-prev`),

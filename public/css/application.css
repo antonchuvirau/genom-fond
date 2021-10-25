@@ -4995,6 +4995,101 @@ table {
     .make-help-template__details p:not(:last-child) {
       margin-bottom: 30px; }
 
+.team-template__wrapper {
+  padding-bottom: 70px; }
+
+.team-template__list-col {
+  margin-bottom: 65px; }
+
+.team-template__form {
+  margin-top: 0; }
+
+.team-template__grid {
+  padding-bottom: 0; }
+
+.team-template__single-img {
+  width: 100%;
+  max-width: 355px;
+  height: 320px;
+  border-radius: 10px; }
+  .team-template__single-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px; }
+
+.team-template__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #612B69;
+  text-decoration: none; }
+  .team-template__link svg {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 15px; }
+  .team-template__link:hover {
+    opacity: .85; }
+
+.team-template__content-title {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #612B69;
+  max-width: 450px;
+  margin-bottom: 15px; }
+
+.team-template__content-desc:not(:last-child) {
+  margin-bottom: 40px; }
+
+.team-template__content-desc p {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #4E3434;
+  font-weight: 600;
+  line-height: 1.45; }
+
+.team-template__content-text ul, .team-template__content-text ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .team-template__content-text ul li, .team-template__content-text ol li {
+    position: relative;
+    padding-left: 25px;
+    font-size: 1.8rem;
+    color: #4E3434;
+    line-height: 1.45; }
+    .team-template__content-text ul li:not(:last-child), .team-template__content-text ol li:not(:last-child) {
+      margin-bottom: 30px; }
+    .team-template__content-text ul li::before, .team-template__content-text ol li::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #F28314;
+      left: 0;
+      top: 7px;
+      border-radius: 50%; }
+
+.team-single-template__form {
+  margin-top: 70px; }
+
 .logo__media {
   max-width: 307px;
   max-height: 120px; }
@@ -5176,21 +5271,15 @@ table {
     margin-bottom: 0; }
 
 .form__radio {
-  width: 95px;
+  width: 92.5px;
   height: 60px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   margin-right: 15px;
   margin-bottom: 25px; }
   .form__radio:nth-child(3n) {
     margin-right: 0; }
 
 .form__value-input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  width: auto;
+  width: calc(100% - 92.5px - 15px);
   text-align: center; }
   .form__value-input::-webkit-input-placeholder {
     font-weight: 500; }
@@ -5382,6 +5471,9 @@ table {
 .media-swiper__img {
   border-radius: 10px; }
 
+.media-swiper__instance.swiper-3d .swiper-slide-shadow {
+  display: none; }
+
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5537,7 +5629,8 @@ table {
       margin: 0;
       margin-right: 20px; }
   .help-form__value-input {
-    height: 100%; }
+    height: 100%;
+    width: auto; }
 
 .modal {
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
@@ -5767,3 +5860,42 @@ table {
 
 .make-help-form__radio:nth-child(4) {
   margin-right: 0; }
+
+.team-item {
+  text-decoration: none; }
+  .team-item__img {
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    margin-bottom: 40px; }
+    .team-item__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: 10px; }
+    .team-item__img_size-m {
+      max-width: 355px;
+      height: 320px;
+      margin-bottom: 30px; }
+  .team-item__name {
+    display: block;
+    margin: 0;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #612B69;
+    max-width: 410px; }
+    .team-item__name_size-m {
+      font-size: 2.4rem;
+      max-width: 300px; }
+  .team-item__desc {
+    margin-top: 15px; }
+    .team-item__desc p {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #4E3434;
+      line-height: 1.45; }
+    .team-item__desc_size-m {
+      margin-top: 10px;
+      max-width: 270px; }

@@ -1,0 +1,95 @@
+// VARIABLES
+$team-teamplate-single-img: 10px;
+
+.team-template {
+    &__wrapper {
+        padding-bottom: 70px;
+    }
+    &__list {
+        &-col {
+            margin-bottom: 65px;
+        }
+    }
+    &__form {
+        margin-top: 0;
+    }
+    &__grid {
+        padding-bottom: 0;
+    }
+    &__single-img {
+        width: 100%;
+        max-width: 355px;
+        height: 320px;
+        border-radius: $team-teamplate-single-img;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: $team-teamplate-single-img;
+        }
+    }
+    &__link {
+        @include flex(row, center);
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $primary;
+        text-decoration: none;
+        & svg {
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+        &:hover {
+            opacity: .85;
+        }
+    }
+    &__content {
+        &-title {
+            margin: 0;
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: $primary;
+            max-width: 450px;
+            margin-bottom: 15px;
+        }
+        &-desc {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+            & p {
+                margin: 0;
+                font-size: 1.8rem;
+                color: $dark;
+                font-weight: 600;
+                line-height: 1.45;
+            }
+        }
+        &-text {
+            & ul, ol {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                & li {
+                    position: relative;
+                    padding-left: 25px;
+                    font-size: 1.8rem;
+                    color: $dark;
+                    line-height: 1.45;
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background: $secondary;
+                        left: 0;
+                        top: 7px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

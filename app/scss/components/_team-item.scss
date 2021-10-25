@@ -1,0 +1,55 @@
+// VARIABLES
+$team-item-br: 10px;
+
+.team-item {
+    text-decoration: none;
+    &__img {
+        width: 100%;
+        max-width: 500px;
+        height: 450px;
+        border-radius: $team-item-br;
+        margin-bottom: 40px;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: $team-item-br;
+        }
+        &_size {
+            &-m {
+                max-width: 355px;
+                height: 320px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__name {
+        display: block;
+        margin: 0;
+        font-size: 3.2rem;
+        font-weight: 600;
+        color: $primary;
+        max-width: 410px;
+        &_size {
+            &-m {
+                font-size: 2.4rem;
+                max-width: 300px;
+            }
+        }
+    }
+    &__desc {
+        margin-top: 15px;
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            color: $dark;
+            line-height: 1.45;
+        }
+        &_size {
+            &-m {
+                margin-top: 10px;
+                max-width: 270px;
+            }
+        }
+    }
+}

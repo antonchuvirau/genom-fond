@@ -29,4 +29,11 @@ $media-swiper-img-br: 10px;
     &__img {
         border-radius: $media-swiper-img-br;
     }
+    &__instance {
+        &.swiper-3d {
+            & .swiper-slide-shadow {
+                display: none;
+            }
+        }
+    }
 }
