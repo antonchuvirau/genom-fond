@@ -33,8 +33,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
         for (const mediaSwiperInstance of mediaSwiperInstanceCollection) {
             new Swiper(mediaSwiperInstance, {
                 effect: "cards",
+                speed: 1000,
                 grabCursor: true,
-                speed: 800,
                 navigation: {
                     prevEl: mediaSwiperInstance.closest(`.text-section`).querySelector(`.carousel-navigation__btn-prev`),
                     nextEl: mediaSwiperInstance.closest(`.text-section`).querySelector(`.carousel-navigation__btn-next`)
@@ -49,5 +49,8 @@ jQuery(document).ready(function() {
     jQuery('[data-modal]').on('click', function() {
         jQuery(jQuery(this).data('modal')).modal();
         return false;
-      });
+    });
+    jQuery(`.make-help-template__links button`).on(`click`, function() {
+        jQuery(this).next().slideToggle();
+    });
 });

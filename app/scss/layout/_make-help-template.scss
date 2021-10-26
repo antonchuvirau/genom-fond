@@ -24,8 +24,19 @@
     &__links {
         @include flex(column);
         margin-bottom: 45px;
-        & a {
-            text-decoration: none;
+        &-content {
+            display: none;
+            margin-bottom: 20px;
+            & p {
+                margin: 0;
+                font-size: 1.8rem;
+                line-height: 1.45;
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        & button {
             font-size: 2rem;
             font-weight: 500;
             color: $primary;

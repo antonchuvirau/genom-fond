@@ -12,6 +12,13 @@ $checkbox-br: 8px;
         top: 0;
         left: 0;
         opacity: 0;
+        &:checked + .checkbox {
+            &__name {
+                &::before {
+                    background: $white icon('check.png') no-repeat 50% / 18px auto;
+                }
+            }
+        }
     }
     &__name {
         position: relative;

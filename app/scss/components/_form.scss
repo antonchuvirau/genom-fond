@@ -31,6 +31,10 @@ $form-input-br: 8px;
         background: $white;
         border-radius: $form-input-br;
     }
+    &__textarea {
+        height: 130px;
+        padding: 15px;
+    }
     &__icons {
         @include flex(row, center);
         & img {

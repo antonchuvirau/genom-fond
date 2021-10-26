@@ -1,5 +1,6 @@
 .modal {
     box-shadow: 0 3px 20px 0 rgba($full-black, .1);
+    padding: 0;
     & a.close-modal {
         top: 25px;
         right: 25px;
@@ -38,4 +39,25 @@
 }
 .health-modal {
     max-width: 770px;
+}
+.order-modal {
+    max-width: 370px;
+    background: $primary-900;
+    & a.close-modal {
+        top: 10px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        background: icon('close.svg') no-repeat 50% / 20px auto;
+    }
+    & .form {
+        &__row {
+            &:nth-child(n) {
+                margin-bottom: 20px;
+            }
+        }
+        &__btn {
+            margin-top: 10px;
+        }
+    }
 }

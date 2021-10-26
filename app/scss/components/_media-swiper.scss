@@ -35,5 +35,13 @@ $media-swiper-img-br: 10px;
                 display: none;
             }
         }
+        &.swiper-cards {
+            overflow: hidden;
+        }
+        &-slide {
+            &.swiper-slide-visible + .swiper-slide-next {
+                // transform: translate3d(calc(7.25% - 413px), 0px, -100px) rotateZ(0deg) scale(1) !important;
+            }
+        }
     }
 }

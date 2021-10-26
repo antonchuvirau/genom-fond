@@ -555,7 +555,7 @@
                         </div>
                     </div>
                     <div class="col-7 footer__col">
-                        <button class="btn btn_is-colored footer__btn" type="button">Напишите нам</button>
+                        <button data-modal="#order-modal" class="btn btn_is-colored footer__btn" type="button">Напишите нам</button>
                         <p class="footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд</p>
                     </div>
                     <div class="col-5 footer__col">
@@ -576,7 +576,28 @@
     </footer>
     <!-- End footer -->
     <!-- Begin modal -->
-    <div class="modal"></div>
+    <div id="order-modal" class="modal order-modal">
+        <div class="modal__wrapper">
+            <span class="modal__title">Напишите нам</span>
+            <div class="modal__grid">
+                <form class="form modal__form">
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Представьтесь:">
+                    </div>
+                    <div class="form__row">
+                        <input type="tel" class="form__input" placeholder="Телефон:">
+                    </div>
+                    <div class="form__row">
+                        <input type="email" class="form__input" placeholder="Email:">
+                    </div>
+                    <div class="form__row">
+                        <textarea placeholder="Текст сообщения:" name="message" class="form__input form__textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn_is-colored form__btn">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- End modal -->
     <!-- BEGIN scripts -->
     <script src="js/application.js"></script>

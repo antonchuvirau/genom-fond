@@ -4303,7 +4303,7 @@ table {
   .header__logo {
     display: block; }
   .header__navigation {
-    margin-top: 25px; }
+    margin-top: 20px; }
   .header_is-sticky {
     position: absolute;
     top: 0;
@@ -4471,7 +4471,7 @@ table {
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%; }
+  background-position: 50% 80%; }
   .hero__title {
     font-size: 3.7rem;
     font-weight: 600;
@@ -4976,14 +4976,22 @@ table {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
   margin-bottom: 45px; }
-  .make-help-template__links a {
-    text-decoration: none;
+  .make-help-template__links-content {
+    display: none;
+    margin-bottom: 20px; }
+    .make-help-template__links-content p {
+      margin: 0;
+      font-size: 1.8rem;
+      line-height: 1.45; }
+      .make-help-template__links-content p:not(:last-child) {
+        margin-bottom: 30px; }
+  .make-help-template__links button, .make-help-template__links select, .make-help-template__links input, .make-help-template__links textarea {
     font-size: 2rem;
     font-weight: 500;
     color: #612B69; }
-    .make-help-template__links a:hover {
+    .make-help-template__links button:hover, .make-help-template__links select:hover, .make-help-template__links input:hover, .make-help-template__links textarea:hover {
       opacity: .85; }
-    .make-help-template__links a:not(:last-child) {
+    .make-help-template__links button:not(:last-child), .make-help-template__links select:not(:last-child), .make-help-template__links input:not(:last-child), .make-help-template__links textarea:not(:last-child) {
       margin-bottom: 20px; }
 
 .make-help-template__details {
@@ -5092,19 +5100,23 @@ table {
 
 .logo__media {
   max-width: 307px;
-  max-height: 120px; }
+  max-height: 123px; }
 
 .btn {
   display: inline-block;
-  padding: 1.55em 2.2em;
+  padding: 1.4em 2em;
   text-decoration: none;
   font-weight: 500;
   color: #fff;
   background: #612B69;
   border-radius: 10px;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.8rem; }
   .btn_is-colored {
     background: #F28314; }
+  .btn_size-s {
+    font-size: 1.6rem;
+    padding: 1.55em 2.2em; }
   .btn_size-m {
     font-size: 2rem;
     padding: 1em 2em; }
@@ -5225,6 +5237,10 @@ table {
   border: 1px solid #CED3EB;
   background: #fff;
   border-radius: 8px; }
+
+.form__textarea {
+  height: 130px;
+  padding: 15px; }
 
 .form__icons {
   display: -webkit-box;
@@ -5474,6 +5490,9 @@ table {
 .media-swiper__instance.swiper-3d .swiper-slide-shadow {
   display: none; }
 
+.media-swiper__instance.swiper-cards {
+  overflow: hidden; }
+
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5634,7 +5653,8 @@ table {
 
 .modal {
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1); }
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 0; }
   .modal a.close-modal {
     top: 25px;
     right: 25px;
@@ -5672,6 +5692,20 @@ table {
 
 .health-modal {
   max-width: 770px; }
+
+.order-modal {
+  max-width: 370px;
+  background: #EDF0FD; }
+  .order-modal a.close-modal {
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: url("../img/icons/close.svg") no-repeat 50%/20px auto; }
+  .order-modal .form__row:nth-child(n) {
+    margin-bottom: 20px; }
+  .order-modal .form__btn {
+    margin-top: 10px; }
 
 .contact-info__title {
   margin: 0;
@@ -5824,6 +5858,8 @@ table {
     top: 0;
     left: 0;
     opacity: 0; }
+    .checkbox__input:checked + .checkbox__name::before {
+      background: #fff url("../img/icons/check.png") no-repeat 50%/18px auto; }
   .checkbox__name {
     position: relative;
     display: block;
@@ -5854,12 +5890,16 @@ table {
       font-size: 1.8rem; }
 
 .make-help-form__radio:nth-child(n) {
+  width: 100px;
   margin: 0;
   margin-right: 20px;
   margin-bottom: 30px; }
 
 .make-help-form__radio:nth-child(4) {
   margin-right: 0; }
+
+.make-help-form .form__value-input {
+  width: 100%; }
 
 .team-item {
   text-decoration: none; }
