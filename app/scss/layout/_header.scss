@@ -60,6 +60,7 @@ $header-options-link-br: 6px;
 // MEDIA
 @media screen and (max-width: 1199px) {
     .header {
+        z-index: 10;
         &__lang {
             margin-left: 0;
             margin-right: 30px;

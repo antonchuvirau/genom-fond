@@ -61,6 +61,9 @@
         }
     }
 }
+.blocker {
+    z-index: 15;
+}
 
 // MEDIA
 @media screen and (max-width: 575px) {

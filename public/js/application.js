@@ -21,6 +21,11 @@
 'use strict';
 
 document.addEventListener(`DOMContentLoaded`, () => {
+    function onOpenMobileMenuButtonClickHandler() {
+        document.documentElement.classList.toggle(`is-locked`);
+        mobileMenuElement.classList.toggle(`m-layout_is-opened`);
+    }
+
     const desktopContainerWidth = 1140;
     const tabletContainerWidth = 930;
     const tabletMContainerWidth = 690;
@@ -28,6 +33,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
     const helpSectionSwiperElement = document.querySelector(`.help-swiper`);
     const healthSectionSwiperElement = document.querySelector(`.health-swiper`);
     const mediaSwiperInstanceCollection = document.querySelectorAll(`.media-swiper__instance`);
+    const openMobileMenuButton = document.querySelector(`.m-menu-btn`);
+    const mobileMenuElement = document.querySelector(`.m-layout`);
     
     if (healthSectionSwiperElement) {
         new Swiper(healthSectionSwiperElement, {
@@ -38,6 +45,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
             navigation: {
                 prevEl: healthSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-prev`),
                 nextEl: healthSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-next`)
+            },
+            pagination: {
+                el: healthSectionSwiperElement.nextElementSibling
             },
             breakpoints: {
                 1200: {
@@ -69,6 +79,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
             navigation: {
                 prevEl: helpSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-prev`),
                 nextEl: helpSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-next`)
+            },
+            pagination: {
+                el: helpSectionSwiperElement.nextElementSibling
             },
             breakpoints: {
                 1200: {
@@ -103,6 +116,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 }
             });
         }
+    }
+    if (openMobileMenuButton) {
+        openMobileMenuButton.addEventListener(`click`, onOpenMobileMenuButtonClickHandler);
     }
 });
 

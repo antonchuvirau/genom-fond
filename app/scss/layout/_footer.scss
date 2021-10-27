@@ -156,12 +156,12 @@
         &__navigation {
             flex-wrap: wrap;
             &-col {
-                width: 50%;
+                width: 55%;
                 &:nth-child(n) {
                     margin: 0;
                 }
                 &:nth-child(2) {
-                    margin-left: auto;
+                    width: 45%;
                 }
                 &:last-child {
                     @include flex(row, center);
@@ -180,9 +180,10 @@
                         font-size: 1.8rem;
                         &:nth-child(n) {
                             margin: 0;
+                            width: 55%;
                         }
                         &:last-child {
-                            margin-left: auto;
+                            width: 45%;
                         }
                     }
                 }
