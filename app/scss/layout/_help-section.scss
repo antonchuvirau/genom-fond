@@ -24,3 +24,36 @@ $swiper-slide-br: 10px;
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .help-section {
+        &__wrapper {
+            padding-bottom: 50px;
+        }
+        &__swiper {
+            &-slide {
+                max-width: 690px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .help-section {
+        &__swiper {
+            &-slide {
+                max-width: 540px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .help-section {
+        &__swiper {
+            padding: 15px;
+            &-slide {
+                max-width: auto;
+            }
+        }
+    }
+}

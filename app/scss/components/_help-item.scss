@@ -28,3 +28,24 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .help-item {
+        &__wrapper {
+            padding: 25px 20px;
+        }
+        &__title {
+            font-size: 2rem;
+        }
+        &__location {
+            font-size: 1.3rem;
+            margin-top: 5px;
+        }
+        &__content {
+            & p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

@@ -45,3 +45,18 @@ $media-swiper-img-br: 10px;
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .media-swiper {
+        &__wrapper {
+            padding-right: 0;
+        }
+        &__footer {
+            margin-top: 20px;
+        }
+        &__link {
+            font-size: 1.4rem;
+        }
+    }
+}

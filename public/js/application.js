@@ -21,6 +21,10 @@
 'use strict';
 
 document.addEventListener(`DOMContentLoaded`, () => {
+    const desktopContainerWidth = 1140;
+    const tabletContainerWidth = 930;
+    const tabletMContainerWidth = 690;
+    const mobileContainerWidth = 540;
     const helpSectionSwiperElement = document.querySelector(`.help-swiper`);
     const healthSectionSwiperElement = document.querySelector(`.health-swiper`);
     const mediaSwiperInstanceCollection = document.querySelectorAll(`.media-swiper__instance`);
@@ -30,10 +34,29 @@ document.addEventListener(`DOMContentLoaded`, () => {
             slidesPerView: `auto`,
             spaceBetween: 55,
             loop: false,
-            slidesOffsetBefore: (window.innerWidth - 1170) / 2,
+            slidesOffsetBefore: (window.innerWidth - desktopContainerWidth) / 2,
             navigation: {
                 prevEl: healthSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-prev`),
                 nextEl: healthSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-next`)
+            },
+            breakpoints: {
+                1200: {
+                    slidesOffsetBefore: (window.innerWidth - desktopContainerWidth) / 2
+                },
+                992: {
+                    slidesOffsetBefore: (window.innerWidth - tabletContainerWidth) / 2
+                },
+                768: {
+                    slidesOffsetBefore: (window.innerWidth - tabletMContainerWidth) / 2
+                },
+                576: {
+                    slidesOffsetBefore: (window.innerWidth - mobileContainerWidth) / 2
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    slidesOffsetBefore: 0
+                }
             }
         });
     }
@@ -42,10 +65,29 @@ document.addEventListener(`DOMContentLoaded`, () => {
             slidesPerView: `auto`,
             spaceBetween: 55,
             loop: false,
-            slidesOffsetBefore: (window.innerWidth - 1170) / 2,
+            slidesOffsetBefore: (window.innerWidth - desktopContainerWidth) / 2,
             navigation: {
                 prevEl: helpSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-prev`),
                 nextEl: helpSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-next`)
+            },
+            breakpoints: {
+                1200: {
+                    slidesOffsetBefore: (window.innerWidth - desktopContainerWidth) / 2
+                },
+                992: {
+                    slidesOffsetBefore: (window.innerWidth - tabletContainerWidth) / 2
+                },
+                768: {
+                    slidesOffsetBefore: (window.innerWidth - tabletMContainerWidth) / 2
+                },
+                576: {
+                    slidesOffsetBefore: (window.innerWidth - mobileContainerWidth) / 2
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    slidesOffsetBefore: 0
+                }
             }
         });
     }

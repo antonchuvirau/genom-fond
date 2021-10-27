@@ -38,3 +38,33 @@ $about-section-form-br: 10px;
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .about-section {
+        &__title {
+            padding-left: 0;
+        }
+        &__form {
+            padding-left: 0;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .about-section {
+        &__links {
+            margin-top: 20px;
+            & a {
+                font-size: 1.4rem;
+                &:not(:last-child) {
+                    margin-right: 45px;
+                }
+            }
+        }
+        &__form {
+            &-instance {
+                padding: 35px 40px;
+            }
+        }
+    }
+}

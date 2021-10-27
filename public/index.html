@@ -31,15 +31,29 @@
                 <div class="col-8 header__col">
                     <div class="header__wrapper">
                         <div class="header__options">
-                            <a href="#" class="header__options-link">Нужна помощь</a>
-                            <a href="#" class="header__options-link header__options-link_is-colored">Хочу помощь</a>
+                            <a href="#" class="d-none d-xl-block header__options-link">Нужна помощь</a>
+                            <a href="#"
+                                class="d-none d-xl-block header__options-link header__options-link_is-colored">Хочу
+                                помощь</a>
                             <div class="lang header__lang">
                                 <div class="lang__wrapper">
                                     <a href="#" class="lang__link">Eng</a>
                                 </div>
                             </div>
+                            <button type="button" class="d-xl-none m-menu-btn header__m-menu-btn">
+                                <svg width="30" height="21">
+                                    <g transform="translate(-381 -42)" fill="#612b69">
+                                        <rect data-name="Rectangle 129" width="30" height="3" rx="1.5"
+                                            transform="translate(381 42)" />
+                                        <rect data-name="Rectangle 130" width="30" height="3" rx="1.5"
+                                            transform="translate(381 51)" />
+                                        <rect data-name="Rectangle 131" width="30" height="3" rx="1.5"
+                                            transform="translate(381 60)" />
+                                    </g>
+                                </svg>
+                            </button>
                         </div>
-                        <nav class="navigation header__navigation">
+                        <nav class="d-none d-xl-block navigation header__navigation">
                             <ul class="list navigation__list navigation__list_end">
                                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">О фонде</a>
                                 </li>
@@ -63,7 +77,7 @@
             <div class="hero__wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6 hero__col">
+                        <div class="col-12 col-xl-6 hero__col">
                             <h1 class="hero__title">Благотворительный фонд</h1>
                             <div class="hero__desc">
                                 <p>медико-социальных генетических проектов помощи «<b>Геном жизни</b>»</p>
@@ -81,7 +95,7 @@
             <div class="section__wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-7 section__col">
+                        <div class="col-12 col-xl-7 section__col">
                             <h2 class="section__title">О фонде</h2>
                             <div class="section__content">
                                 <p>Благотворительный фонд «Геном жизни» создан с целью оказания помощи в проведении
@@ -94,7 +108,8 @@
                                     Генетические технологии служат важным инструментом при постановке диагноза и
                                     определении первопричины проблемы, что в дальнейшем позволяет сохранить жизни и
                                     повысить ее качество для каждого члена семьи вне зависимости от возраста и пола.</p>
-                                <p><b>Мы делаем дорогостоящие технологии доступными сегодня тем, кто в них нуждается.</b></p>
+                                <p><b>Мы делаем дорогостоящие технологии доступными сегодня тем, кто в них
+                                        нуждается.</b></p>
                             </div>
                             <div class="number about-section__number">
                                 <span class="number__value">196</span>
@@ -127,8 +142,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-5 section__col">
-                            <h3 class="section__title about-section__title">Хочу помочь</h3>
+                        <div class="col-12 col-xl-5 section__col">
+                            <h3 class="d-none d-xl-block section__title about-section__title">Хочу помочь</h3>
                             <div class="about-section__form">
                                 <form class="form about-section__form-instance">
                                     <div class="form__row form__value">
@@ -173,13 +188,13 @@
             </div>
         </section>
         <section class="section help-section">
-            <div class="section__wrapper">
+            <div class="section__wrapper help-section__wrapper">
                 <header class="section__header help-section__header">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 section__col">
                                 <h3 class="section__title help-section__title">Мы с вами помогли</h3>
-                                <div class="carousel-navigation section__navigation help-section__navigation">
+                                <div class="d-none d-xl-flex carousel-navigation section__navigation help-section__navigation">
                                     <button type="button"
                                         class="carousel-navigation__btn carousel-navigation__btn-prev">
                                         <svg width="12.884" height="20.271">
@@ -294,13 +309,13 @@
             </div>
         </section>
         <section class="section help-section health-section">
-            <div class="section__wrapper section__wrapper_no-border">
+            <div class="section__wrapper help-section-section__wrapper section__wrapper_no-border">
                 <header class="section__header help-section__header">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 section__col">
                                 <h3 class="section__title help-section__title">Генетические заболевания</h3>
-                                <div class="carousel-navigation section__navigation help-section__navigation">
+                                <div class="d-none d-xl-flex carousel-navigation section__navigation help-section__navigation">
                                     <button type="button"
                                         class="carousel-navigation__btn carousel-navigation__btn-prev">
                                         <svg width="12.884" height="20.271">
@@ -382,13 +397,19 @@
             <div class="section__wrapper section__wrapper_no-border">
                 <div class="container">
                     <div class="row">
-                        <div class="col-7 section__col">
+                        <div class="col-12 col-xl-7 section__col">
                             <h3 class="section__title">Наша команда</h3>
                             <div class="section__content text-section__content">
-                                <p>Сотрудники благотворительного фонда – это команда неравнодушных профессионалов, цель которых – сделать доступными дорогостоящие генетические исследования остронуждающимся детям и взрослым. В задачи коллектива входит прием и работа с обращениями граждан, работа с медицинскими учреждениями и генетическими лабораториями, организация благотворительных акций и сбор пожертвований, отчетность, координация волонтерского движения, развитие авторских программ помощи и многое другое.</p>
+                                <p>Сотрудники благотворительного фонда – это команда неравнодушных профессионалов, цель
+                                    которых – сделать доступными дорогостоящие генетические исследования
+                                    остронуждающимся детям и взрослым. В задачи коллектива входит прием и работа с
+                                    обращениями граждан, работа с медицинскими учреждениями и генетическими
+                                    лабораториями, организация благотворительных акций и сбор пожертвований, отчетность,
+                                    координация волонтерского движения, развитие авторских программ помощи и многое
+                                    другое.</p>
                             </div>
                         </div>
-                        <div class="col-5 section__col">
+                        <div class="col-12 col-xl-5 section__col">
                             <div class="media-swiper">
                                 <div class="media-swiper__wrapper">
                                     <div class="media-swiper__instance swiper">
@@ -407,7 +428,15 @@
                                     <footer class="media-swiper__footer">
                                         <a href="#" class="media-swiper__link">
                                             Подробнее
-                                            <svg width="34.354" height="17.594"><g fill="none"><path d="M0 .239h34v17H0z"/><path d="M1.294 8.797h31.649M32.943 8.797l-8.437-7.385M32.943 8.797l-8.437 7.385" stroke="#f28314" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2"/></g></svg>
+                                            <svg width="34.354" height="17.594">
+                                                <g fill="none">
+                                                    <path d="M0 .239h34v17H0z" />
+                                                    <path
+                                                        d="M1.294 8.797h31.649M32.943 8.797l-8.437-7.385M32.943 8.797l-8.437 7.385"
+                                                        stroke="#f28314" stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-miterlimit="79.84" stroke-width="2" />
+                                                </g>
+                                            </svg>
                                         </a>
                                         <div class="carousel-navigation media-swiper__navigation">
                                             <button type="button"
@@ -416,8 +445,9 @@
                                                     <g fill="none">
                                                         <path d="M.884 0h12v20h-12z" />
                                                         <path d="m1.414 10.338 9.736-8.521M1.414 10.339l9.739 8.522"
-                                                            stroke="#612b69" stroke-linecap="round" stroke-linejoin="round"
-                                                            stroke-miterlimit="79.84" stroke-width="2" />
+                                                            stroke="#612b69" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-miterlimit="79.84"
+                                                            stroke-width="2" />
                                                     </g>
                                                 </svg>
                                             </button>
@@ -427,8 +457,9 @@
                                                     <g fill="none">
                                                         <path d="M0 .027h13v20H0z" />
                                                         <path d="M12.018 10.135 2.051 1.412M12.018 10.136l-9.967 8.723"
-                                                            stroke="#612b69" stroke-linecap="round" stroke-linejoin="round"
-                                                            stroke-miterlimit="79.84" stroke-width="2" />
+                                                            stroke="#612b69" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-miterlimit="79.84"
+                                                            stroke-width="2" />
                                                     </g>
                                                 </svg>
                                             </button>
@@ -445,7 +476,7 @@
             <div class="section__wrapper section__wrapper_no-border">
                 <div class="container">
                     <div class="row">
-                        <div class="col-5 section__col">
+                        <div class="col-12 col-xl-5 order-2 order-xl-1 section__col">
                             <div class="media-swiper">
                                 <div class="media-swiper__wrapper">
                                     <div class="media-swiper__instance swiper">
@@ -464,7 +495,15 @@
                                     <footer class="media-swiper__footer">
                                         <a href="#" class="media-swiper__link">
                                             Подробнее
-                                            <svg width="34.354" height="17.594"><g fill="none"><path d="M0 .239h34v17H0z"/><path d="M1.294 8.797h31.649M32.943 8.797l-8.437-7.385M32.943 8.797l-8.437 7.385" stroke="#f28314" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2"/></g></svg>
+                                            <svg width="34.354" height="17.594">
+                                                <g fill="none">
+                                                    <path d="M0 .239h34v17H0z" />
+                                                    <path
+                                                        d="M1.294 8.797h31.649M32.943 8.797l-8.437-7.385M32.943 8.797l-8.437 7.385"
+                                                        stroke="#f28314" stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-miterlimit="79.84" stroke-width="2" />
+                                                </g>
+                                            </svg>
                                         </a>
                                         <div class="carousel-navigation media-swiper__navigation">
                                             <button type="button"
@@ -473,8 +512,9 @@
                                                     <g fill="none">
                                                         <path d="M.884 0h12v20h-12z" />
                                                         <path d="m1.414 10.338 9.736-8.521M1.414 10.339l9.739 8.522"
-                                                            stroke="#612b69" stroke-linecap="round" stroke-linejoin="round"
-                                                            stroke-miterlimit="79.84" stroke-width="2" />
+                                                            stroke="#612b69" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-miterlimit="79.84"
+                                                            stroke-width="2" />
                                                     </g>
                                                 </svg>
                                             </button>
@@ -484,8 +524,9 @@
                                                     <g fill="none">
                                                         <path d="M0 .027h13v20H0z" />
                                                         <path d="M12.018 10.135 2.051 1.412M12.018 10.136l-9.967 8.723"
-                                                            stroke="#612b69" stroke-linecap="round" stroke-linejoin="round"
-                                                            stroke-miterlimit="79.84" stroke-width="2" />
+                                                            stroke="#612b69" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-miterlimit="79.84"
+                                                            stroke-width="2" />
                                                     </g>
                                                 </svg>
                                             </button>
@@ -494,13 +535,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-7 section__col">
+                        <div class="col-12 col-xl-7 order-1 order-xl-2 section__col">
                             <h3 class="section__title">Попечительский совет</h3>
                             <div class="section__content text-section__content">
-                                <p>Стратегическое управление благотворительным фондом «Геном жизни» осуществляет Попечительский совет, основная функция которого — общий надзор за реализацией программы фонда и использованием денежных средств.</p>
-                                <p>В состав попечительского совета приглашены пользующиеся общественным авторитетом представители предпринимательских, научных и медицинских кругов.</p>
+                                <p>Стратегическое управление благотворительным фондом «Геном жизни» осуществляет
+                                    Попечительский совет, основная функция которого — общий надзор за реализацией
+                                    программы фонда и использованием денежных средств.</p>
+                                <p>В состав попечительского совета приглашены пользующиеся общественным авторитетом
+                                    представители предпринимательских, научных и медицинских кругов.</p>
                             </div>
-                            <p class="section__note">Объединив усилия, мы сможем подарить надежду на здоровье многим людям, столкнувшимся с серьезными заболеваниями. Поддержать работу фонда помощи людям с подозрением на наследственное заболевание легко: вы можете сделать это финансово или приняв участие в акциях. Мы вовлекаем в программы неравнодушных людей всех возрастов.</p>
+                            <p class="section__note">Объединив усилия, мы сможем подарить надежду на здоровье многим
+                                людям, столкнувшимся с серьезными заболеваниями. Поддержать работу фонда помощи людям с
+                                подозрением на наследственное заболевание легко: вы можете сделать это финансово или
+                                приняв участие в акциях. Мы вовлекаем в программы неравнодушных людей всех возрастов.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -516,7 +564,7 @@
                     <div class="col-12 footer__col">
                         <p class="footer__title">Контакты</p>
                     </div>
-                    <div class="col-4 footer__col">
+                    <div class="col-12 col-xl-4 footer__col">
                         <div class="footer__info">
                             <div class="footer__info-text">
                                 <p>15162, Москва, улица Лестева,<br>дом 18, этаж 2, помещение III, комната 4.</p>
@@ -532,7 +580,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8 footer__col">
+                    <div class="col-12 col-xl-8 footer__col">
+                        <button data-modal="#order-modal" class="d-xl-none btn btn_is-colored footer__btn" type="button">Напишите нам</button>
                         <div class="footer__navigation">
                             <div class="footer__navigation-col">
                                 <a href="#" class="footer__navigation-link">О фонде</a>
@@ -554,11 +603,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-7 footer__col">
-                        <button data-modal="#order-modal" class="btn btn_is-colored footer__btn" type="button">Напишите нам</button>
-                        <p class="footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд</p>
+                    <div class="col-12 col-xl-7 footer__col">
+                        <button data-modal="#order-modal" class="d-none d-xl-block btn btn_is-colored footer__btn" type="button">Напишите нам</button>
+                        <p class="d-none d-xl-block footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд</p>
                     </div>
-                    <div class="col-5 footer__col">
+                    <div class="col-12 col-xl-5 footer__col">
                         <div class="footer__search">
                             <form class="footer__search-form">
                                 <input class="footer__search-input" type="text" name="s" placeholder="Поиск по сайту">
@@ -569,6 +618,7 @@
                             <a href="#">Карта сайта</a>
                             <a href="#">Политика конфиденциальности</a>
                         </div>
+                        <p class="d-xl-none footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд</p>
                     </div>
                 </div>
             </div>
@@ -591,7 +641,8 @@
                         <input type="email" class="form__input" placeholder="Email:">
                     </div>
                     <div class="form__row">
-                        <textarea placeholder="Текст сообщения:" name="message" class="form__input form__textarea"></textarea>
+                        <textarea placeholder="Текст сообщения:" name="message"
+                            class="form__input form__textarea"></textarea>
                     </div>
                     <button type="submit" class="btn btn_is-colored form__btn">Отправить сообщение</button>
                 </form>

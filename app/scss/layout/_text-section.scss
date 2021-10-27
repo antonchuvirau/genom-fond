@@ -3,3 +3,12 @@
         padding-right: 70px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .text-section {
+        &__content {
+            padding-right: 0;
+        }
+    }
+}

@@ -4,3 +4,20 @@
         max-height: 123px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .logo {
+        &__media {
+            max-width: 250px;
+            max-height: auto;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .logo {
+        &__media {
+            max-height: 70px;
+        }
+    }
+}

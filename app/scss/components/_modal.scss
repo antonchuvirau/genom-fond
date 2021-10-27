@@ -61,3 +61,11 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .order-modal {
+        max-width: 100%;
+        width: 100%;
+    }
+}

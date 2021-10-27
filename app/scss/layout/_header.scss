@@ -56,3 +56,18 @@ $header-options-link-br: 6px;
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .header {
+        &__lang {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .header {
+        padding: 15px 0;
+    }
+}

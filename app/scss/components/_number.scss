@@ -15,3 +15,16 @@
         margin-left: 30px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .number {
+        &__value {
+            font-size: 5.4rem;
+        }
+        &__text {
+            font-size: 1.8rem;
+            margin-left: 20px;
+        }
+    }
+}

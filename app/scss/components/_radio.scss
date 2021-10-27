@@ -37,3 +37,13 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .radio {
+        &__name {
+            font-size: 1.7rem;
+            line-height: 55px;
+        }
+    }
+}

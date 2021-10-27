@@ -132,3 +132,83 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .footer {
+        &__wrapper {
+            padding: 40px 0;
+        }
+        &__title {
+            font-size: 1.8rem;
+        }
+        &__info {
+            margin-bottom: 35px;
+            &-text {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+                & p, a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &__navigation {
+            flex-wrap: wrap;
+            &-col {
+                width: 50%;
+                &:nth-child(n) {
+                    margin: 0;
+                }
+                &:nth-child(2) {
+                    margin-left: auto;
+                }
+                &:last-child {
+                    @include flex(row, center);
+                    width: 100%;
+                    margin: 30px 0;
+                    margin-bottom: 15px;
+                }
+            }
+            &-link {
+                font-size: 1.3rem;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                &_size {
+                    &-l {
+                        font-size: 1.8rem;
+                        &:nth-child(n) {
+                            margin: 0;
+                        }
+                        &:last-child {
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+        &__search {
+            margin-bottom: 40px;
+        }
+        &__links {
+            & a {
+                font-size: 1.3rem;
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+            }
+        }
+        &__copyright {
+            font-size: 1.3rem;
+            margin-top: 20px;
+        }
+        &__btn {
+            &.btn {
+                font-size: 1.4rem;
+                max-width: 210px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
