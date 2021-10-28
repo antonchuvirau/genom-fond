@@ -100,3 +100,27 @@ $media-swiper-img-br: 10px;
         }
     }
 }
+@media screen and (max-width: 575px) {
+    .media-swiper {
+        &__instance {
+            max-width: 100%;
+            & .swiper-wrapper {
+                height: 63vw;
+            }
+            &-slide {
+                &.swiper-slide-prev {
+                    transform: translate3d(-5rem,0,0) scale(1.25) !important;
+                }
+                &.swiper-slide-next {
+                    transform: scale(.8) translate3d(6.75rem,0,0) !important;
+                    & + .swiper-slide {
+                        transform: scale(.64) translate3d(15.8125rem,0,0) !important;
+                    }
+                }
+            }
+        }
+        &__img {
+            max-height: 100%;
+        }
+    }
+}

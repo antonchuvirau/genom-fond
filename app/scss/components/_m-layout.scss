@@ -16,7 +16,9 @@
     }
     &__row {
         padding: 30px 0;
-        border-bottom: 1px solid rgba($primary, .12);
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba($primary, .12);
+        }
         &:first-child {
             padding-top: 0;
         }
@@ -59,6 +61,27 @@
             }
             &:not(:last-child) {
                 margin-bottom: 20px
+            }
+        }
+    }
+    &__footer {
+        @include flex(column, flex-end);
+        &-link {
+            text-align: right;
+            text-decoration: none;
+            color: $dark;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            &-value {
+                display: block;
+                white-space: nowrap;
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 5px;
+            }
+            &:hover {
+                opacity: .85;
             }
         }
     }
