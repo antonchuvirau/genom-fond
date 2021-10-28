@@ -130,6 +130,9 @@ $form-input-br: 8px;
                 flex: 1 1 auto;
             }
         }
+        &__unsubscribe {
+            margin-top: 0;
+        }
     }
 }
 @media screen and (max-width: 991px) {

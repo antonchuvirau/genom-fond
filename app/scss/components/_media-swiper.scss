@@ -56,15 +56,18 @@ $media-swiper-img-br: 10px;
                 z-index: 1 !important;
             }
             &.swiper-slide-prev {
+                display: none !important;
                 transform: translate3d(-7rem,0,0) scale(1.25) !important;
                 z-index: 2 !important;
                 opacity: 0;
             }
             &.swiper-slide-next {
+                display: none !important;
                 transform: scale(.8) translate3d(8.75rem,0,0) !important;
                 opacity: 1 !important;
                 z-index: 0 !important;
                 & + .swiper-slide {
+                    display: none !important;
                     transform: scale(.64) translate3d(19.8125rem,0,0) !important;
                     opacity: 1 !important;
                     z-index: -1 !important;

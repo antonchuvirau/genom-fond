@@ -82,6 +82,7 @@ $team-item-br: 10px;
             font-size: 1.6rem;
         }
         &__desc {
+            margin-top: 10px;
             & p {
                 font-size: 1.4rem;
             }
@@ -103,10 +104,11 @@ $team-item-br: 10px;
 @media screen and (max-width: 575px) {
     .team-item {
         &__img {
-            height: 43vw;
+            height: 85vw;
+            max-width: none;
             &_size {
                 &-m {
-                    height: 45vw;
+                    height: 85vw;
                 }
             }
         }

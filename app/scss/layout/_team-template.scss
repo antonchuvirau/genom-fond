@@ -173,7 +173,12 @@ $team-teamplate-single-img: 10px;
     .team-template {
         &__list {
             &-col {
-                margin-bottom: 20px;
+                &:not(:last-child) {
+                    margin-bottom: 35px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
         &__form {
@@ -187,7 +192,7 @@ $team-teamplate-single-img: 10px;
         &__grid {
             &-col {
                 &:not(:last-child) {
-                    margin-bottom: 20px;
+                    margin-bottom: 35px;
                 }
             }
         }
