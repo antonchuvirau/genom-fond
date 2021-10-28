@@ -5371,7 +5371,9 @@ table {
 
 @media screen and (max-width: 1199px) {
   .make-help-template__col:not(:last-child) {
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  .make-help-template__col:first-child {
+    padding-right: 0; } }
 
 @media screen and (max-width: 991px) {
   .make-help-template__col-title {
@@ -5393,6 +5395,10 @@ table {
       font-size: 1.4rem; }
     .make-help-template__details p:not(:last-child) {
       margin-bottom: 20px; } }
+
+@media screen and (max-width: 575px) {
+  .make-help-template__col:first-child {
+    padding-right: 15px; } }
 
 .team-template__wrapper {
   padding-bottom: 70px; }
