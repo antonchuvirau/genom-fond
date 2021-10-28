@@ -27,3 +27,22 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .contact-info {
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        &__value {
+            font-size: 1.6rem;
+            & a {
+                font-size: 1.6rem;
+            }
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

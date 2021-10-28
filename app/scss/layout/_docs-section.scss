@@ -1,26 +1,27 @@
 .docs-section {
     &__wrapper {
+        padding: 0;
         padding-top: 45px;
     }
     &__item {
+        @include flex(row, center);
         position: relative;
         text-decoration: none;
         font-size: 2rem;
         color: $primary;
         font-weight: 500;
-        padding-left: 100px;
+        padding-left: 0;
         &::before {
             content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            display: block;
             width: 70px;
             height: 86px;
+            flex-shrink: 0;
+            margin-right: 30px;
             background: icon('doc.svg') no-repeat 50% / 70px auto;
         }
         &:not(:last-child) {
-            margin-bottom: 100px;
+            margin-bottom: 35px;
         }
     }
     &__col {
@@ -28,5 +29,43 @@
     }
     &__title {
         margin-bottom: 75px;
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .docs-section {
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .docs-section {
+        &__wrapper {
+            padding-top: 30px;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__item {
+            font-size: 1.4rem;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            &::before {
+                width: 50px;
+                height: 61px;
+                background-size: 50px auto;
+                margin-right: 20px;
+            }
+        }
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
     }
 }

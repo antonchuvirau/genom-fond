@@ -31,24 +31,37 @@
                 <div class="col-8 header__col">
                     <div class="header__wrapper">
                         <div class="header__options">
-                            <a href="#" class="header__options-link">Нужна помощь</a>
-                            <a href="#" class="header__options-link header__options-link_is-colored">Хочу помощь</a>
+                            <a href="#" class="d-none d-xl-block header__options-link">Нужна помощь</a>
+                            <a href="#"
+                                class="d-none d-xl-block header__options-link header__options-link_is-colored">Хочу
+                                помощь</a>
                             <div class="lang header__lang">
                                 <div class="lang__wrapper">
                                     <a href="#" class="lang__link">Eng</a>
                                 </div>
                             </div>
+                            <button type="button" class="d-xl-none m-menu-btn header__m-menu-btn">
+                                <svg width="30" height="21">
+                                    <g transform="translate(-381 -42)" fill="#612b69">
+                                        <rect data-name="Rectangle 129" width="30" height="3" rx="1.5"
+                                            transform="translate(381 42)" />
+                                        <rect data-name="Rectangle 130" width="30" height="3" rx="1.5"
+                                            transform="translate(381 51)" />
+                                        <rect data-name="Rectangle 131" width="30" height="3" rx="1.5"
+                                            transform="translate(381 60)" />
+                                    </g>
+                                </svg>
+                            </button>
                         </div>
-                        <nav class="navigation header__navigation">
+                        <nav class="d-none d-xl-block navigation header__navigation">
                             <ul class="list navigation__list navigation__list_end">
-                                <li class="navigation__list-item"><a class="navigation__list-link navigation__list-link_active" href="#">О фонде</a>
+                                <li class="navigation__list-item"><a class="navigation__list-link" href="#">О фонде</a>
                                 </li>
                                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Мы с вами
                                         помогли</a></li>
                                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Генетические
                                         заболевания</a></li>
-                                <li class="navigation__list-item"><a
-                                        class="navigation__list-link" href="#">Контакты</a>
+                                <li class="navigation__list-item"><a class="navigation__list-link" href="#">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -72,11 +85,12 @@
                         <h1 class="template__title">Сделать пожертвование</h1>
                         <div class="template__grid">
                             <div class="row">
-                                <div class="col-6 make-help-template__col">
+                                <div class="col-12 col-xl-6 make-help-template__col">
                                     <form class="form make-help-form about-section__form-instance">
                                         <div class="form__row form__value">
                                             <label class="radio form__radio make-help-form__radio">
-                                                <input name="value" checked type="radio" class="radio__input" value="150">
+                                                <input name="value" checked type="radio" class="radio__input"
+                                                    value="150">
                                                 <span class="radio__name form__input">150</span>
                                             </label>
                                             <label class="radio form__radio make-help-form__radio">
@@ -91,12 +105,16 @@
                                                 <input name="value" type="radio" class="radio__input" value="1000">
                                                 <span class="radio__name form__input">1000</span>
                                             </label>
-                                            <input type="text" placeholder="Другая сумма" class="form__input form__value-input">
+                                            <input type="text" placeholder="Другая сумма"
+                                                class="form__input form__value-input">
                                         </div>
                                         <div class="form__row unsubscribe form__unsubscribe">
                                             <label class="checkbox unsubscribe__checkbox">
                                                 <input type="checkbox" name="privacy" class="checkbox__input">
-                                                <span class="checkbox__name checkbox__name_size-m">Жертвовать ежемесячно<br><span class="checkbox__name-note">У вас всегда есть возможность</span><a href="#">отписаться от ежемесячного пожертвования</a></span>
+                                                <span class="checkbox__name checkbox__name_size-m">Жертвовать
+                                                    ежемесячно<br><span class="checkbox__name-note">У вас всегда есть
+                                                        возможность</span><a href="#">отписаться от ежемесячного
+                                                        пожертвования</a></span>
                                             </label>
                                         </div>
                                         <span class="form__sub-title">Ваши данные</span>
@@ -109,14 +127,18 @@
                                         <div class="privacy form__privacy form__row">
                                             <label class="checkbox privacy__checkbox">
                                                 <input type="checkbox" name="privacy" class="checkbox__input">
-                                                <span class="checkbox__name">Соглашаюсь с <a href="#">условиями оферты</a></span>
+                                                <span class="checkbox__name">Соглашаюсь с <a href="#">условиями
+                                                        оферты</a></span>
                                             </label>
                                         </div>
-                                        <button type="submit" class="btn btn_size-m btn_is-colored form__btn">Хочу помочь</button>
-                                        <p class="form__note form__note_align-left">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                                        <button type="submit" class="btn btn_size-m btn_is-colored form__btn">Хочу
+                                            помочь</button>
+                                        <p class="form__note form__note_align-left">Нажимая на кнопку, вы даете согласие
+                                            на обработку персональных данных и соглашаетесь с <a href="#">политикой
+                                                конфиденциальности</a></p>
                                     </form>
                                 </div>
-                                <div class="col-6 make-help-template__col">
+                                <div class="col-12 col-xl-6 make-help-template__col">
                                     <span class="make-help-template__col-title">Системы и способы оплаты</span>
                                     <div class="make-help-template__icons">
                                         <img src="img/robokassa.svg" alt="alt">
@@ -169,7 +191,7 @@
                     <div class="col-12 footer__col">
                         <p class="footer__title">Контакты</p>
                     </div>
-                    <div class="col-4 footer__col">
+                    <div class="col-12 col-xl-4 footer__col">
                         <div class="footer__info">
                             <div class="footer__info-text">
                                 <p>15162, Москва, улица Лестева,<br>дом 18, этаж 2, помещение III, комната 4.</p>
@@ -185,7 +207,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8 footer__col">
+                    <div class="col-12 col-xl-8 footer__col">
+                        <button data-modal="#order-modal" class="d-xl-none btn btn_is-colored footer__btn"
+                            type="button">Напишите нам</button>
                         <div class="footer__navigation">
                             <div class="footer__navigation-col">
                                 <a href="#" class="footer__navigation-link">О фонде</a>
@@ -207,11 +231,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-7 footer__col">
-                        <button class="btn btn_is-colored footer__btn" type="button">Напишите нам</button>
-                        <p class="footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд</p>
+                    <div class="col-12 col-xl-7 footer__col">
+                        <button data-modal="#order-modal" class="d-none d-xl-block btn btn_is-colored footer__btn"
+                            type="button">Напишите нам</button>
+                        <p class="d-none d-xl-block footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд
+                        </p>
                     </div>
-                    <div class="col-5 footer__col">
+                    <div class="col-12 col-xl-5 footer__col">
                         <div class="footer__search">
                             <form class="footer__search-form">
                                 <input class="footer__search-input" type="text" name="s" placeholder="Поиск по сайту">
@@ -222,12 +248,38 @@
                             <a href="#">Карта сайта</a>
                             <a href="#">Политика конфиденциальности</a>
                         </div>
+                        <p class="d-xl-none footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- End footer -->
+    <!-- Begin modal -->
+    <div id="order-modal" class="modal order-modal">
+        <div class="modal__wrapper">
+            <span class="modal__title">Напишите нам</span>
+            <div class="modal__grid">
+                <form class="form modal__form">
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Представьтесь:">
+                    </div>
+                    <div class="form__row">
+                        <input type="tel" class="form__input" placeholder="Телефон:">
+                    </div>
+                    <div class="form__row">
+                        <input type="email" class="form__input" placeholder="Email:">
+                    </div>
+                    <div class="form__row">
+                        <textarea placeholder="Текст сообщения:" name="message"
+                            class="form__input form__textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn_is-colored form__btn">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
     <!-- Begin modal -->
     <div id="health-modal" class="modal health-modal">
         <div class="modal__wrapper">
@@ -249,6 +301,42 @@
         </div>
     </div>
     <!-- End modal -->
+    <!-- BEGIN MOBILE LAYOUT -->
+    <div class="m-layout">
+        <div class="m-layout__wrapper">
+            <div class="m-layout__top m-layout__row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <header class="m-layout__header">
+                                <a class="m-layout__header-link" href="#">Нужна помощь</a>
+                                <a class="m-layout__header-link m-layout__header-link_is-colored" href="#">Хочу
+                                    помочь</a>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-layout__bottom m-layout__row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="m-layout__grid">
+                                <a class="m-layout__grid-link" href="#">О фонде</a>
+                                <a class="m-layout__grid-link" href="#">Вы с вами помогли</a>
+                                <a class="m-layout__grid-link" href="#">Генетические заболевания</a>
+                                <a class="m-layout__grid-link" href="#">Команда</a>
+                                <a class="m-layout__grid-link" href="#">Попечительский совет</a>
+                                <a class="m-layout__grid-link" href="#">Новости и события</a>
+                                <a class="m-layout__grid-link" href="#">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MOBILE LAYOUT -->
     <!-- BEGIN scripts -->
     <script src="js/application.js"></script>
     <!-- END scripts -->

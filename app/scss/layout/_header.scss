@@ -2,7 +2,9 @@
 $header-options-link-br: 6px;
 
 .header {
+    position: relative;
     padding: 20px 0;
+    z-index: 10;
     &__options {
         @include flex(row, center, flex-end);
         &-link {
@@ -44,11 +46,9 @@ $header-options-link-br: 6px;
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 10;
         }
     }
     &:not(.header_is-sticky) {
-        border-bottom: 1px solid $secondary-900;
         & .lang {
             &__link {
                 background: $secondary-950;

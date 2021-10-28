@@ -3,3 +3,12 @@
         margin-top: 0;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .help-template {
+        &__form {
+            margin-top: 70px;
+        }
+    }
+}

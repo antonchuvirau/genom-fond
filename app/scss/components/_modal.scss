@@ -66,8 +66,31 @@
 }
 
 // MEDIA
+@media screen and (max-width: 991px) {
+    .modal {
+        & a.close-modal {
+            top: 15px;
+            right: 15px;
+        }
+        &__wrapper {
+            padding-top: 50px;
+        }
+        &__title {
+            font-size: 2rem;
+        }
+        &__content {
+            & p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
 @media screen and (max-width: 575px) {
     .order-modal {
+        max-width: 100%;
+        width: 100%;
+    }
+    .health-modal {
         max-width: 100%;
         width: 100%;
     }

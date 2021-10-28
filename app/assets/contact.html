@@ -31,15 +31,29 @@
                 <div class="col-8 header__col">
                     <div class="header__wrapper">
                         <div class="header__options">
-                            <a href="#" class="header__options-link">Нужна помощь</a>
-                            <a href="#" class="header__options-link header__options-link_is-colored">Хочу помощь</a>
+                            <a href="#" class="d-none d-xl-block header__options-link">Нужна помощь</a>
+                            <a href="#"
+                                class="d-none d-xl-block header__options-link header__options-link_is-colored">Хочу
+                                помощь</a>
                             <div class="lang header__lang">
                                 <div class="lang__wrapper">
                                     <a href="#" class="lang__link">Eng</a>
                                 </div>
                             </div>
+                            <button type="button" class="d-xl-none m-menu-btn header__m-menu-btn">
+                                <svg width="30" height="21">
+                                    <g transform="translate(-381 -42)" fill="#612b69">
+                                        <rect data-name="Rectangle 129" width="30" height="3" rx="1.5"
+                                            transform="translate(381 42)" />
+                                        <rect data-name="Rectangle 130" width="30" height="3" rx="1.5"
+                                            transform="translate(381 51)" />
+                                        <rect data-name="Rectangle 131" width="30" height="3" rx="1.5"
+                                            transform="translate(381 60)" />
+                                    </g>
+                                </svg>
+                            </button>
                         </div>
-                        <nav class="navigation header__navigation">
+                        <nav class="d-none d-xl-block navigation header__navigation">
                             <ul class="list navigation__list navigation__list_end">
                                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">О фонде</a>
                                 </li>
@@ -47,8 +61,7 @@
                                         помогли</a></li>
                                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Генетические
                                         заболевания</a></li>
-                                <li class="navigation__list-item"><a
-                                        class="navigation__list-link navigation__list-link_active" href="#">Контакты</a>
+                                <li class="navigation__list-item"><a class="navigation__list-link" href="#">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -72,7 +85,7 @@
                         <h1 class="template__title">Контакты</h1>
                         <div class="template__grid">
                             <div class="row">
-                                <div class="col-4 template__grid-col">
+                                <div class="col-12 col-xl-4 template__grid-col">
                                     <div class="contact-info">
                                         <h2 class="contact-info__title">Наш адрес</h2>
                                         <div class="contact-info__value">
@@ -88,7 +101,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-8 template__grid-col">
+                                <div class="col-12 col-xl-8 template__grid-col">
                                     <div class="contact-template__map">
                                         <script type="text/javascript" charset="utf-8" async
                                             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab640ba9c0e55efa329eb0501d2d564163153756d07d8c337c296ec616d525cd3&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false">
@@ -109,8 +122,9 @@
                             <div class="col-12">
                                 <h3 class="company-info__title">Реквизиты фонда</h3>
                                 <div class="row">
-                                    <div class="col-5 company-info__col">
-                                        <p><b>Благотворительный фонд медико-социальных генетических проектов помощи «Геном Жизни»</b></p>
+                                    <div class="col-12 col-xl-5 company-info__col">
+                                        <p><b>Благотворительный фонд медико-социальных генетических проектов помощи
+                                                «Геном Жизни»</b></p>
                                         <p>
                                             ОГРН: 1207700282591<br>
                                             ОКПО: 45188567<br>
@@ -120,8 +134,9 @@
                                             ОКОГУ 4210014
                                         </p>
                                     </div>
-                                    <div class="col-5 company-info__col offset-1">
-                                        <p><b>Юридический адрес</b><br>115162, улица Лестева, дом 18,<br>этаж 2, помещение III, комната 4</p>
+                                    <div class="col-12 col-xl-5 company-info__col offset-xl-1">
+                                        <p><b>Юридический адрес</b><br>115162, улица Лестева, дом 18,<br>этаж 2,
+                                            помещение III, комната 4</p>
                                         <p>
                                             Банковские реквизиты<br>
                                             ИНН: 9725034719,<br>
@@ -188,7 +203,7 @@
                     <div class="col-12 footer__col">
                         <p class="footer__title">Контакты</p>
                     </div>
-                    <div class="col-4 footer__col">
+                    <div class="col-12 col-xl-4 footer__col">
                         <div class="footer__info">
                             <div class="footer__info-text">
                                 <p>15162, Москва, улица Лестева,<br>дом 18, этаж 2, помещение III, комната 4.</p>
@@ -204,7 +219,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8 footer__col">
+                    <div class="col-12 col-xl-8 footer__col">
+                        <button data-modal="#order-modal" class="d-xl-none btn btn_is-colored footer__btn"
+                            type="button">Напишите нам</button>
                         <div class="footer__navigation">
                             <div class="footer__navigation-col">
                                 <a href="#" class="footer__navigation-link">О фонде</a>
@@ -226,11 +243,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-7 footer__col">
-                        <button class="btn btn_is-colored footer__btn" type="button">Напишите нам</button>
-                        <p class="footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд</p>
+                    <div class="col-12 col-xl-7 footer__col">
+                        <button data-modal="#order-modal" class="d-none d-xl-block btn btn_is-colored footer__btn"
+                            type="button">Напишите нам</button>
+                        <p class="d-none d-xl-block footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд
+                        </p>
                     </div>
-                    <div class="col-5 footer__col">
+                    <div class="col-12 col-xl-5 footer__col">
                         <div class="footer__search">
                             <form class="footer__search-form">
                                 <input class="footer__search-input" type="text" name="s" placeholder="Поиск по сайту">
@@ -241,12 +260,38 @@
                             <a href="#">Карта сайта</a>
                             <a href="#">Политика конфиденциальности</a>
                         </div>
+                        <p class="d-xl-none footer__copyright">&copy; 2021. Геном Жизни - благотворительный фонд</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- End footer -->
+    <!-- Begin modal -->
+    <div id="order-modal" class="modal order-modal">
+        <div class="modal__wrapper">
+            <span class="modal__title">Напишите нам</span>
+            <div class="modal__grid">
+                <form class="form modal__form">
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Представьтесь:">
+                    </div>
+                    <div class="form__row">
+                        <input type="tel" class="form__input" placeholder="Телефон:">
+                    </div>
+                    <div class="form__row">
+                        <input type="email" class="form__input" placeholder="Email:">
+                    </div>
+                    <div class="form__row">
+                        <textarea placeholder="Текст сообщения:" name="message"
+                            class="form__input form__textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn_is-colored form__btn">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
     <!-- Begin modal -->
     <div id="health-modal" class="modal health-modal">
         <div class="modal__wrapper">
@@ -268,6 +313,42 @@
         </div>
     </div>
     <!-- End modal -->
+    <!-- BEGIN MOBILE LAYOUT -->
+    <div class="m-layout">
+        <div class="m-layout__wrapper">
+            <div class="m-layout__top m-layout__row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <header class="m-layout__header">
+                                <a class="m-layout__header-link" href="#">Нужна помощь</a>
+                                <a class="m-layout__header-link m-layout__header-link_is-colored" href="#">Хочу
+                                    помочь</a>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-layout__bottom m-layout__row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="m-layout__grid">
+                                <a class="m-layout__grid-link" href="#">О фонде</a>
+                                <a class="m-layout__grid-link" href="#">Вы с вами помогли</a>
+                                <a class="m-layout__grid-link" href="#">Генетические заболевания</a>
+                                <a class="m-layout__grid-link" href="#">Команда</a>
+                                <a class="m-layout__grid-link" href="#">Попечительский совет</a>
+                                <a class="m-layout__grid-link" href="#">Новости и события</a>
+                                <a class="m-layout__grid-link" href="#">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MOBILE LAYOUT -->
     <!-- BEGIN scripts -->
     <script src="js/application.js"></script>
     <!-- END scripts -->

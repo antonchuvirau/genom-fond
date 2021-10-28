@@ -36,6 +36,8 @@ $team-teamplate-single-img: 10px;
         color: $primary;
         text-decoration: none;
         & svg {
+            width: 35px;
+            height: 18px;
             flex-shrink: 0;
             margin-right: 15px;
         }
@@ -88,6 +90,104 @@ $team-teamplate-single-img: 10px;
                         top: 7px;
                         border-radius: 50%;
                     }
+                }
+            }
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .team-template {
+        &__single {
+            &-img {
+                height: 255px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .team-template {
+        &__wrapper {
+            padding-bottom: 50px;
+        }
+        &__single {
+            &-img {
+                height: 175px;
+            }
+        }
+        &__content {
+            &-title {
+                font-size: 2rem;
+            }
+            &-desc {
+                & p, a {
+                    font-size: 1.4rem;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+            &-text {
+                & p, ul li, ol li, a {
+                    font-size: 1.4rem;
+                }
+                & p {
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                }
+                & ul, ol {
+                    & li {
+                        &::before {
+                            width: 7px;
+                            height: 7px;
+                            top: 6px;
+                        }
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &__link {
+            font-size: 1.4rem;
+            & svg {
+                width: 25px;
+                height: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .team-template {
+        &__single {
+            &-img {
+                height: 115px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .team-template {
+        &__list {
+            &-col {
+                margin-bottom: 20px;
+            }
+        }
+        &__form {
+            margin-top: 50px;
+        }
+        &__single {
+            &-img {
+                height: 62vw;
+            }
+        }
+        &__grid {
+            &-col {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
                 }
             }
         }

@@ -16,6 +16,8 @@ $media-swiper-img-br: 10px;
         color: $primary;
         font-weight: 500;
         & svg {
+            width: 35px;
+            height: 18px;
             flex-shrink: 0;
             margin-left: 15px;
         }
@@ -23,24 +25,50 @@ $media-swiper-img-br: 10px;
             opacity: .85;
         }
     }
-    &__navigation {
+    &__navigation, &__pagination {
         margin-left: auto;
+        width: auto !important;
     }
     &__img {
         border-radius: $media-swiper-img-br;
     }
     &__instance {
+        width: 100%;
+        & .swiper-wrapper {
+            height: 360px;
+        }
         &.swiper-3d {
             & .swiper-slide-shadow {
                 display: none;
             }
         }
-        &.swiper-cards {
-            overflow: hidden;
-        }
         &-slide {
-            &.swiper-slide-visible + .swiper-slide-next {
-                // transform: translate3d(calc(7.25% - 413px), 0px, -100px) rotateZ(0deg) scale(1) !important;
+            position: absolute;
+            width: 100% !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translateX(0) rotate(0) !important;
+            z-index: 0 !important;
+            &.swiper-slide-active {
+                opacity: 1 !important;
+                z-index: 1 !important;
+            }
+            &.swiper-slide-prev {
+                transform: translate3d(-7rem,0,0) scale(1.25) !important;
+                z-index: 2 !important;
+                opacity: 0;
+            }
+            &.swiper-slide-next {
+                transform: scale(.8) translate3d(8.75rem,0,0) !important;
+                opacity: 1 !important;
+                z-index: 0 !important;
+                & + .swiper-slide {
+                    transform: scale(.64) translate3d(19.8125rem,0,0) !important;
+                    opacity: 1 !important;
+                    z-index: -1 !important;
+                }
             }
         }
     }
@@ -57,6 +85,10 @@ $media-swiper-img-br: 10px;
         }
         &__link {
             font-size: 1.4rem;
+            & svg {
+                width: 23px;
+                height: 12px;
+            }
         }
     }
 }

@@ -53,3 +53,67 @@ $team-item-br: 10px;
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .team-item {
+        &__img {
+            height: 400px;
+            &_size {
+                &-m {
+                    height: 255px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .team-item {
+        &__img {
+            height: 280px;
+            margin-bottom: 15px;
+            &_size {
+                &-m {
+                    height: 175px;
+                }
+            }
+        }
+        &__name {
+            font-size: 1.6rem;
+        }
+        &__desc {
+            & p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .team-item {
+        &__img {
+            height: 190px;
+            &_size {
+                &-m {
+                    height: 115px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .team-item {
+        &__img {
+            height: 43vw;
+            &_size {
+                &-m {
+                    height: 45vw;
+                }
+            }
+        }
+        &__desc {
+            & p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

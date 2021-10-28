@@ -113,6 +113,25 @@ $form-input-br: 8px;
 }
 
 // MEDIA
+@media screen and (max-width: 1199px) {
+    .form {
+        &__radio {
+            width: calc((100% - 40px) / 3);
+            &:nth-child(n) {
+                margin-right: 20px;
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+        &__value {
+            &-input {
+                width: calc(100% / 3);
+                flex: 1 1 auto;
+            }
+        }
+    }
+}
 @media screen and (max-width: 991px) {
     .form {
         &__radio {
@@ -135,13 +154,16 @@ $form-input-br: 8px;
         &__note {
             font-size: 1.2rem;
         }
+        &__sub-title {
+            font-size: 2rem;
+        }
     }
 }
 @media screen and (max-width: 575px) {
     .form {
         &__btn {
             &.btn {
-                padding: 1.4em 1em;
+                padding: 1.2em 1em;
             }
         }
     }

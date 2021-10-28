@@ -45,6 +45,21 @@
 }
 
 // MEDIA
+@media screen and (max-width: 1199px) {
+    .section {
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+            &.order-1 {
+                margin-bottom: 35px;
+            }
+            &.order-2 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 @media screen and (max-width: 991px) {
     .section {
         &__wrapper {
@@ -61,17 +76,6 @@
                 &:not(:last-child) {
                     margin-bottom: 20px;
                 }
-            }
-        }
-        &__col {
-            &:not(:last-child) {
-                margin-bottom: 35px;
-            }
-            &.order-1 {
-                margin-bottom: 35px;
-            }
-            &.order-2 {
-                margin-bottom: 0;
             }
         }
         &__header {

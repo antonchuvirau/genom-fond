@@ -9,6 +9,7 @@ $health-item-br: 10px;
         background: $white;
         box-shadow: 0 2px 15px 0 rgba($full-black, .1);
         border-radius: $health-item-br;
+        height: 100%;
     }
     &__title {
         font-size: 2.4rem;
@@ -41,6 +42,8 @@ $health-item-br: 10px;
         font-size: 2rem;
         margin-top: auto;
         & svg {
+            width: 35px;
+            height: 18px;
             flex-shrink: 0;
             margin-left: 15px;
         }
@@ -63,6 +66,34 @@ $health-item-br: 10px;
             }
             &__link {
                 color: $white;
+            }
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .health-item {
+        &__wrapper {
+            padding: 25px 20px;
+        }
+        &__title {
+            font-size: 2rem;
+        }
+        &__location {
+            font-size: 1.3rem;
+            margin-top: 5px;
+        }
+        &__content {
+            & p {
+                font-size: 1.4rem;
+            }
+        }
+        &__link {
+            font-size: 1.4rem;
+            & svg {
+                width: 23px;
+                height: 12px;
             }
         }
     }

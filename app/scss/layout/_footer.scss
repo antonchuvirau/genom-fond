@@ -134,6 +134,17 @@
 }
 
 // MEDIA
+@media screen and (max-width: 1199px) {
+    .footer {
+        &__btn {
+            &.btn {
+                font-size: 1.4rem;
+                max-width: 210px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 991px) {
     .footer {
         &__wrapper {
@@ -208,7 +219,31 @@
             &.btn {
                 font-size: 1.4rem;
                 max-width: 210px;
-                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 413px) {
+    .footer {
+        &__navigation {
+            &-link {
+                &_size {
+                    &-l {
+                        font-size: 1.6rem;
+                        &:nth-child(n) {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+            &-col {
+                width: 50%;
+                &:nth-child(2) {
+                    width: 50%;
+                }
+                &:last-child {
+                    width: 100%;
+                }
             }
         }
     }

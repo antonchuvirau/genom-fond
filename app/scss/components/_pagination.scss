@@ -38,3 +38,12 @@ $pagination-link-br: 6px;
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .pagination {
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+}

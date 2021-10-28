@@ -20,14 +20,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
         new Swiper(healthSectionSwiperElement, {
             slidesPerView: `auto`,
             spaceBetween: 55,
-            loop: false,
             slidesOffsetBefore: (window.innerWidth - desktopContainerWidth) / 2,
             navigation: {
                 prevEl: healthSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-prev`),
                 nextEl: healthSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-next`)
             },
             pagination: {
-                el: healthSectionSwiperElement.nextElementSibling
+                el: healthSectionSwiperElement.nextElementSibling,
+                dynamicBullets: true
             },
             breakpoints: {
                 1200: {
@@ -54,14 +54,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
         new Swiper(helpSectionSwiperElement, {
             slidesPerView: `auto`,
             spaceBetween: 55,
-            loop: false,
             slidesOffsetBefore: (window.innerWidth - desktopContainerWidth) / 2,
             navigation: {
                 prevEl: helpSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-prev`),
                 nextEl: helpSectionSwiperElement.closest(`.help-section`).querySelector(`.carousel-navigation__btn-next`)
             },
             pagination: {
-                el: helpSectionSwiperElement.nextElementSibling
+                el: helpSectionSwiperElement.nextElementSibling,
+                dynamicBullets: true
             },
             breakpoints: {
                 1200: {
@@ -88,11 +88,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
         for (const mediaSwiperInstance of mediaSwiperInstanceCollection) {
             new Swiper(mediaSwiperInstance, {
                 effect: "cards",
-                speed: 1000,
                 grabCursor: true,
+                loop: true,
                 navigation: {
                     prevEl: mediaSwiperInstance.closest(`.text-section`).querySelector(`.carousel-navigation__btn-prev`),
                     nextEl: mediaSwiperInstance.closest(`.text-section`).querySelector(`.carousel-navigation__btn-next`)
+                },
+                pagination: {
+                    el: mediaSwiperInstance.closest(`.text-section`).querySelector(`.carousel-pagination`)
                 }
             });
         }

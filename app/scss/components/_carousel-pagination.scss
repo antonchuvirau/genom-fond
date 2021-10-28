@@ -1,0 +1,22 @@
+.carousel-pagination {
+    &.swiper-pagination {
+        &-bullets {
+            & span {
+                width: 7px;
+                height: 7px;
+                flex-shrink: 0;
+                background: $dark-800;
+                opacity: 1;
+                margin: 0;
+                &.swiper-pagination-bullet-active {
+                    background: $dark-700;
+                    width: 20px;
+                    border-radius: 30px;
+                }
+                &:not(:last-child) {
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}

@@ -42,7 +42,7 @@ $checkbox-br: 8px;
         &::before {
             content: '';
             position: absolute;
-            top: -7px;
+            top: -8px;
             left: 0;
             width: 32px;
             height: 32px;
@@ -53,6 +53,21 @@ $checkbox-br: 8px;
         &_size {
             &-m {
                 font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .checkbox {
+        &__name {
+            font-size: 1.4rem;
+            &-note {
+                font-size: 1.4rem;
+            }
+            & a {
+                font-size: 1.4rem;
             }
         }
     }

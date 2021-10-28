@@ -60,3 +60,54 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .make-help-template {
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .make-help-template {
+        &__col {
+            &-title {
+                margin-bottom: 20px;
+                font-size: 1.6rem;
+            }
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        &__links {
+            margin-bottom: 10px;
+            & button {
+                font-size: 1.6rem;
+            }
+            &-content {
+                & p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &__icons {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        &__details {
+            margin-top: 30px;
+            & p, a {
+                font-size: 1.4rem;
+            }
+            & p {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

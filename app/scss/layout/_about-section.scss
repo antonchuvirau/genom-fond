@@ -18,6 +18,8 @@ $about-section-form-br: 10px;
                 margin-right: 70px;
             }
             & svg {
+                width: 35px;
+                height: 18px;
                 margin-left: 15px;
                 flex-shrink: 0;
             }
@@ -59,11 +61,39 @@ $about-section-form-br: 10px;
                 &:not(:last-child) {
                     margin-right: 45px;
                 }
+                & svg {
+                    width: 23px;
+                    height: 12px;
+                }
             }
         }
         &__form {
             &-instance {
                 padding: 35px 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .about-section {
+        &__form {
+            &-instance {
+                padding: 35px 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 413px) {
+    .about-section {
+        &__links {
+            & a {
+                font-size: 1.3rem;
+                &:not(:last-child) {
+                    margin-right: 35px;
+                }
+                & svg {
+                    margin-left: 10px;
+                }
             }
         }
     }

@@ -21,27 +21,24 @@
     &__docs {
         margin-top: 50px;
         &-item {
-            display: inline-block;
+            @include flex(row, center);
             position: relative;
             text-decoration: none;
             font-size: 2rem;
             color: $primary;
             font-weight: 500;
-            padding-left: 100px;
-            max-width: 365px;
-            line-height: 1.45;
+            padding-left: 0;
             &::before {
                 content: '';
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
+                display: block;
                 width: 70px;
                 height: 86px;
+                flex-shrink: 0;
+                margin-right: 30px;
                 background: icon('doc.svg') no-repeat 50% / 70px auto;
             }
             &:not(:last-child) {
-                margin-bottom: 70px;
+                margin-bottom: 35px;
             }
         }
     }
@@ -59,6 +56,58 @@
             color: $black;
             &:hover {
                 opacity: .85;
+            }
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 1199px) {
+    .get-help-template {
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .get-help-template {
+        &__wrapper {
+            padding-bottom: 50px;
+        }
+        &__col {
+            &-title {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            &-content {
+                & p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &__docs {
+            margin-top: 30px;
+            &-item {
+                font-size: 1.4rem;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                &::before {
+                    width: 50px;
+                    height: 61px;
+                    background-size: 50px auto;
+                    margin-right: 20px;
+                }
+            }
+        }
+        &__info {
+            & p {
+                font-size: 1.4rem;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
             }
         }
     }
