@@ -6636,7 +6636,7 @@ table {
   .make-help-form__radio:nth-child(3n) {
     margin-right: 0; }
   .make-help-form .form__value-input {
-    width: auto; } }
+    width: calc((100% - 20px)/3); } }
 
 .team-item {
   text-decoration: none; }

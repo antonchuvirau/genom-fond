@@ -34,22 +34,9 @@
         & .form {
             &__value {
                 &-input {
-                    width: auto;
+                    width: calc((100% - 20px)/3);
                 }
             }
-        }
-    }
-}
-@media screen and (max-width: 575px) {
-    .make-help-form {
-        &__radio {
-            // &:nth-child(n) {
-            //     width: calc((100% - 20px) / 2);
-            //     margin-right: 20px;
-            // }
-            // &:nth-child(2n) {
-            //     margin-right: 0;
-            // }
         }
     }
 }
