@@ -35,7 +35,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     const mediaSwiperInstanceCollection = document.querySelectorAll(`.media-swiper__instance`);
     const openMobileMenuButton = document.querySelector(`.m-menu-btn`);
     const mobileMenuElement = document.querySelector(`.m-layout`);
-    
+
     if (healthSectionSwiperElement) {
         new Swiper(healthSectionSwiperElement, {
             slidesPerView: `auto`,
@@ -107,8 +107,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
     if (mediaSwiperInstanceCollection.length) {
         for (const mediaSwiperInstance of mediaSwiperInstanceCollection) {
             new Swiper(mediaSwiperInstance, {
-                effect: "cards",
-                grabCursor: true,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
                 loop: true,
                 navigation: {
                     prevEl: mediaSwiperInstance.closest(`.text-section`).querySelector(`.carousel-navigation__btn-prev`),
@@ -126,12 +128,12 @@ document.addEventListener(`DOMContentLoaded`, () => {
 });
 
 // JQUERY
-jQuery(document).ready(function() {
-    jQuery('[data-modal]').on('click', function() {
+jQuery(document).ready(function () {
+    jQuery('[data-modal]').on('click', function () {
         jQuery(jQuery(this).data('modal')).modal();
         return false;
     });
-    jQuery(`.make-help-template__links button`).on(`click`, function() {
+    jQuery(`.make-help-template__links button`).on(`click`, function () {
         jQuery(this).next().slideToggle();
     });
 });

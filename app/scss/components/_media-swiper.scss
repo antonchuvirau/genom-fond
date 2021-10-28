@@ -2,9 +2,9 @@
 $media-swiper-img-br: 10px;
 
 .media-swiper {
-    &__wrapper {
-        padding-right: 45px;
-    }
+    // &__wrapper {
+    //     padding-right: 45px;
+    // }
     &__footer {
         @include flex(row, center);
         margin-top: 35px;
@@ -34,8 +34,12 @@ $media-swiper-img-br: 10px;
     }
     &__instance {
         width: 100%;
+        max-width: 400px;
+        margin: 0;
+        overflow: visible;
         & .swiper-wrapper {
             height: 360px;
+            transform-style: initial;
         }
         &.swiper-3d {
             & .swiper-slide-shadow {
@@ -43,31 +47,32 @@ $media-swiper-img-br: 10px;
             }
         }
         &-slide {
-            position: absolute;
-            width: 100% !important;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            transform: translateX(0) rotate(0) !important;
-            z-index: 0 !important;
+            &.swiper-slide {
+                position: absolute;
+                width: 100% !important;
+                top: 0;
+                left: 0;
+                right: 0;
+                transform-style: initial;
+                transform-origin: 50%;
+                transform: translateX(0) rotate(0) !important;
+                transition: opacity .25s ease, transform .35s ease;
+                z-index: -5;
+            }
             &.swiper-slide-active {
                 opacity: 1 !important;
                 z-index: 1 !important;
+                transform: translateX(0) rotate(0)!important;
             }
             &.swiper-slide-prev {
-                display: none !important;
                 transform: translate3d(-7rem,0,0) scale(1.25) !important;
                 z-index: 2 !important;
-                opacity: 0;
             }
             &.swiper-slide-next {
-                display: none !important;
                 transform: scale(.8) translate3d(8.75rem,0,0) !important;
                 opacity: 1 !important;
                 z-index: 0 !important;
                 & + .swiper-slide {
-                    display: none !important;
                     transform: scale(.64) translate3d(19.8125rem,0,0) !important;
                     opacity: 1 !important;
                     z-index: -1 !important;
