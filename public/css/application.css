@@ -4144,6 +4144,8 @@ html {
       top: 0;
       left: 0;
       overflow: hidden; }
+    html.is-locked .header .lang__link {
+      background: #fff; }
 
 *,
 *::before,

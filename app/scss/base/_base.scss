@@ -18,6 +18,13 @@ html {
             left: 0;
             overflow: hidden;
         }
+        & .header {
+            & .lang {
+                &__link {
+                    background: $white;
+                }
+            }
+        }
     }
 }
 *,
