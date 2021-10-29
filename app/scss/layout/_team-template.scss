@@ -186,7 +186,8 @@ $team-teamplate-single-img: 10px;
         }
         &__single {
             &-img {
-                height: 62vw;
+                max-width: none;
+                height: 92vw;
             }
         }
         &__grid {

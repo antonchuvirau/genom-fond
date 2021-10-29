@@ -5537,7 +5537,8 @@ table {
   .team-template__form {
     margin-top: 50px; }
   .team-template__single-img {
-    height: 62vw; }
+    max-width: none;
+    height: 92vw; }
   .team-template__grid-col:not(:last-child) {
     margin-bottom: 35px; } }
 
