@@ -11,6 +11,8 @@ $help-form-br: 10px;
         color: $primary;
         align-self: center;
         margin-right: 25px;
+        flex-shrink: 0;
+        max-width: 96px;
     }
     &__wrapper {
         padding: 50px 45px;
@@ -51,6 +53,7 @@ $help-form-br: 10px;
             margin: 0;
             align-self: flex-start;
             margin-bottom: 30px;
+            max-width: none;
         }
         &__instance {
             flex-direction: column;
