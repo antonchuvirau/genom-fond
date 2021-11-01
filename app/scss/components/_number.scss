@@ -1,8 +1,9 @@
 .number {
     @include flex(row, center);
     &__value {
+        font-family: $font-title;
         position: relative;
-        top: 5px;
+        top: -5px;
         font-size: 7.3rem;
         font-weight: 500;
         color: $secondary;

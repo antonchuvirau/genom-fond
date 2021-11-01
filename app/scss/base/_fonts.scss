@@ -29,3 +29,10 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Exo 2.0';
+    src: font('Exo20-Bold.woff2') format('woff2'), font('Exo20-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -4257,6 +4257,13 @@ table {
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Exo 2.0';
+  src: url("../fonts/Exo20-Bold.woff2") format("woff2"), url("../fonts/Exo20-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
 /**
  * Basic typography style for copy text
  */
@@ -4636,6 +4643,7 @@ table {
     border-bottom: none; }
 
 .section__title {
+  font-family: "Exo 2.0";
   margin: 0;
   font-size: 3.5rem;
   font-weight: 600;
@@ -4755,7 +4763,9 @@ table {
   .about-section__title {
     padding-left: 0; }
   .about-section__form {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .about-section__col:not(:last-child) {
+    margin-bottom: 0; } }
 
 @media screen and (max-width: 991px) {
   .about-section__links {
@@ -4839,6 +4849,7 @@ table {
   .template__breadcrumbs {
     margin-bottom: 10px; }
   .template__title {
+    font-family: "Exo 2.0";
     margin: 0;
     font-size: 3.7rem;
     color: #612B69; }
@@ -5676,8 +5687,9 @@ table {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap; }
   .number__value {
+    font-family: "Exo 2.0";
     position: relative;
-    top: 5px;
+    top: -5px;
     font-size: 7.3rem;
     font-weight: 500;
     color: #F28314; }

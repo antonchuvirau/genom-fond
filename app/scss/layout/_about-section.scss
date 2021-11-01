@@ -50,6 +50,11 @@ $about-section-form-br: 10px;
         &__form {
             padding-left: 0;
         }
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 @media screen and (max-width: 991px) {
